@@ -1,8 +1,8 @@
 <template>
   <AppCard class="flex flex-col gap-2">
     <div class="flex gap-6 w-fit items-center">
-      <div class="bg-primary/40 rounded-lg p-4 border border-primary/50">
-        <Vue3Lottie :animationData="Developer" :height="100" :width="100" :speed="0.5" />
+      <div class="bg-primary/20 rounded-lg p-4 border border-primary/20">
+        <Vue3Lottie :animationData="Developer" :height="64" :width="64" :speed="0.5" />
       </div>
 
       <div>
@@ -10,7 +10,9 @@
           <SplitText text="Dominik Raducki" class-name="text-2xl font-semibold text-center" />
         </h1>
         <p class="bg-secondary text-white w-fit px-2 py-1 rounded-sm">Frontend Developer</p>
-        <p class="font-light text-sm mt-4">Specializing in Vue, Nuxt and Drupal technologies</p>
+        <p class="font-light text-sm mt-4">
+          Specializing in <b>Vue, Nuxt and Drupal</b> technologies
+        </p>
       </div>
     </div>
 
