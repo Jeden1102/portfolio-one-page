@@ -1,12 +1,12 @@
 <template>
   <BubbleMenu
-    :logo="() => h(AppLogo)"
+    :logo="h(AppLogo)"
     :items="items"
     className="lg:max-w-[calc(100%-400px)] lg:left-auto lg:w-full"
   />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import BubbleMenu from '../bits/BubbleMenu/BubbleMenu.vue'
 import { h } from 'vue'
 import AppLogo from './AppLogo.vue'
