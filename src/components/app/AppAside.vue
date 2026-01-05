@@ -1,44 +1,59 @@
 <template>
-  <AppCard class="flex flex-col gap-2">
-    <div class="flex gap-6 w-fit items-center">
-      <div class="bg-primary/20 rounded-lg p-4 border border-primary/20">
-        <Vue3Lottie :animationData="Developer" :height="64" :width="64" :speed="0.5" />
-      </div>
+  <aside id="start">
+    <AnimatedContent
+      :distance="100"
+      direction="vertical"
+      :reverse="false"
+      :duration="0.8"
+      ease="power3.out"
+      :initial-opacity="0"
+      :animate-opacity="true"
+      :scale="1"
+      :threshold="0.1"
+      :delay="0"
+    >
+      <AppCard class="flex flex-col gap-2 lg:w-100 lg:min-w-100">
+        <div class="flex gap-6 w-fit items-center">
+          <div class="bg-primary/20 rounded-lg p-2 border border-primary/20">
+            <Vue3Lottie :animationData="Developer" :height="64" :width="64" :speed="0.5" />
+          </div>
 
-      <div>
-        <h1>
-          <SplitText text="Dominik Raducki" class-name="text-2xl font-semibold text-center" />
-        </h1>
-        <p class="bg-secondary text-white w-fit px-2 py-1 rounded-sm">Frontend Developer</p>
-        <p class="font-light text-sm mt-4">
-          Specializing in <b>Vue, Nuxt and Drupal</b> technologies
-        </p>
-      </div>
-    </div>
+          <div>
+            <h1 class="text-2xl font-semibold">Dominik Raducki</h1>
+            <p class="bg-secondary text-white w-fit px-2 py-1 rounded-sm text-sm my-2">
+              Frontend Developer
+            </p>
+            <p class="font-light text-sm mt-2">
+              Specializing in <b>Vue, Nuxt and Drupal</b> technologies
+            </p>
+          </div>
+        </div>
 
-    <hr class="text-primary/10 my-4" />
+        <hr class="text-primary/10 my-4" />
 
-    <div class="flex flex-col gap-4">
-      <ContactBox
-        v-for="contact in contactForms"
-        :title="contact.title"
-        :value="contact.value"
-        :icon="contact.icon"
-        :uri="contact.uri"
-      />
-    </div>
+        <div class="flex flex-col gap-4">
+          <ContactBox
+            v-for="contact in contactForms"
+            :title="contact.title"
+            :value="contact.value"
+            :icon="contact.icon"
+            :uri="contact.uri"
+          />
+        </div>
 
-    <hr class="text-primary/10 my-4" />
+        <hr class="text-primary/10 my-4" />
 
-    <div class="flex justify-center gap-4">
-      <SocialBox
-        v-for="social in socials"
-        :title="social.title"
-        :icon="social.icon"
-        :uri="social.uri"
-      />
-    </div>
-  </AppCard>
+        <div class="flex justify-center gap-4">
+          <SocialBox
+            v-for="social in socials"
+            :title="social.title"
+            :icon="social.icon"
+            :uri="social.uri"
+          />
+        </div>
+      </AppCard>
+    </AnimatedContent>
+  </aside>
 </template>
 
 <script setup lang="ts">
@@ -49,6 +64,7 @@ import AppCard from '@/components/app/AppCard.vue'
 import ContactBox from '../molecules/ContactBox.vue'
 import SocialBox from '../molecules/SocialBox.vue'
 import Developer from '@/assets/developer.json'
+import AnimatedContent from '../bits/AnimatedContent/AnimatedContent.vue'
 
 const contactForms = [
   {

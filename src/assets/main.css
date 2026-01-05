@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import 'primeicons/primeicons.css';
 @import "tailwindcss";
 
 @theme {
   --font-poppins: "Poppins", sans-serif; 
+  --font-dyna: "DynaPuff", system-ui;
 
   --color-primary: #41B883;
   --color-secondary: #34495E;
@@ -11,6 +12,6 @@
 
 @layer base {
   body {
-    @apply font-poppins bg-primary/5;
+    @apply font-poppins bg-linear-to-tr from-primary/5 to-primary/10;
   }
 }
