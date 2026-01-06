@@ -2,7 +2,8 @@
   <BubbleMenu
     :logo="h(AppLogo)"
     :items="items"
-    className="lg:max-w-[calc(100%-400px)] lg:left-auto lg:w-full"
+    className="lg:max-w-[calc(100%-360px)] lg:left-auto lg:w-full"
+    useFixedPosition
   />
 </template>
 

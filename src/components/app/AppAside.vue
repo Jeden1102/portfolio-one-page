@@ -1,6 +1,6 @@
 <template>
-  <aside id="start">
-    <AppCard class="flex flex-col gap-2 lg:w-100 lg:min-w-100" isAnimated>
+  <aside>
+    <AppCard class="flex flex-col gap-4 lg:w-90 lg:min-w-90" isAnimated>
       <div class="flex gap-6 w-fit items-center">
         <div class="bg-primary/20 rounded-lg p-2 border border-primary/20">
           <Vue3Lottie :animationData="Developer" :height="64" :width="64" :speed="0.5" />
@@ -8,16 +8,14 @@
 
         <div>
           <h1 class="text-2xl font-semibold">Dominik Raducki</h1>
-          <p class="bg-secondary text-white w-fit px-2 py-1 rounded-sm text-sm my-2">
-            Frontend Developer
-          </p>
+          <Badge> Frontend Developer </Badge>
           <p class="font-light text-sm mt-2">
             Specializing in <b>Vue, Nuxt and Drupal</b> technologies
           </p>
         </div>
       </div>
 
-      <hr class="text-primary/10 my-4" />
+      <hr class="text-primary/10 my-2" />
 
       <div class="flex flex-col gap-4">
         <ContactBox
@@ -29,7 +27,7 @@
         />
       </div>
 
-      <hr class="text-primary/10 my-4" />
+      <hr class="text-primary/10 my-2" />
 
       <div class="flex justify-center gap-4">
         <SocialBox
@@ -39,6 +37,8 @@
           :uri="social.uri"
         />
       </div>
+
+      <Button to="/Dominik-Raducki-CV.pdf" variant="primary"> Pobierz CV </Button>
     </AppCard>
   </aside>
 </template>
@@ -50,6 +50,8 @@ import AppCard from '@/components/app/AppCard.vue'
 import ContactBox from '../molecules/ContactBox.vue'
 import SocialBox from '../molecules/SocialBox.vue'
 import Developer from '@/assets/developer.json'
+import Button from '../atoms/Button.vue'
+import Badge from '../atoms/Badge.vue'
 
 const contactForms = [
   {

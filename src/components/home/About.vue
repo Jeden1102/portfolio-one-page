@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col gap-4" id="about">
-    <SectionTitle tag="h2" text="Frontend Developer" />
+    <SectionTitle tag="h2" text="Frontend" textFeatured="Developer" />
 
     <p class="text-secondary">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, doloremque eum? Aliquid

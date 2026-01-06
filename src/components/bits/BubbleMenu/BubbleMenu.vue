@@ -350,6 +350,7 @@ watch(
           role="menuitem"
           :href="item.href"
           :aria-label="item.ariaLabel || item.label"
+          @click="isMenuOpen = false"
           :class="[
             'pill-link',
             'w-full',

@@ -11,6 +11,10 @@
 }
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply font-poppins bg-linear-to-tr from-primary/5 to-primary/10;
   }
