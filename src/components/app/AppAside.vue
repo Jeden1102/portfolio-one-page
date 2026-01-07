@@ -2,7 +2,7 @@
   <aside>
     <AppCard class="flex flex-col gap-4 lg:w-90 lg:min-w-90" isAnimated>
       <div class="flex gap-6 w-fit items-center">
-        <div class="bg-primary-500 rounded-lg p-2">
+        <div class="bg-primary-500/60 rounded-lg p-2">
           <Vue3Lottie :animationData="Developer" :height="64" :width="64" :speed="0.5" />
         </div>
 
