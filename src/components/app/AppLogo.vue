@@ -1,6 +1,6 @@
 <template>
   <div class="flex gap-2 items-center text-xl font-bold">
-    <span class="text-primary">D</span>
+    <span class="text-primary-500">D</span>
     <Vue3Lottie :animationData="Code" :height="36" :width="36" />
     <span class="text-secondary">R</span>
   </div>

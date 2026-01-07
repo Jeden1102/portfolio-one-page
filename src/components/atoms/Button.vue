@@ -41,7 +41,7 @@ const glowColor = computed(() => {
     ref="buttonRef"
     :href="to"
     :class="[
-      'group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden rounded-xl border font-medium transition-all duration-300 focus:outline-none',
+      'group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden rounded-xl font-medium transition-all duration-300 focus:outline-none',
       variantClasses[variant],
     ]"
     @mousemove="handleMouseMove"

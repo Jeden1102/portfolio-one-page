@@ -6,7 +6,16 @@
   --font-poppins: "Poppins", sans-serif; 
   --font-dyna: "DynaPuff", system-ui;
 
-  --color-primary: #41B883;
+  --color-primary-50: #f0fdf4;
+  --color-primary-100: #D1ECDE;
+  --color-primary-200: #bbf7d0;
+  --color-primary-300: #86efac;
+  --color-primary-400: #4ade80;
+  --color-primary-500: #41B883;
+  --color-primary-600: #16a34a;
+  --color-primary-700: #15803d;
+  --color-primary-800: #166534;
+  --color-primary-900: #14532d;
   --color-secondary: #34495E;
 }
 
@@ -16,6 +25,6 @@
   }
 
   body {
-    @apply font-poppins bg-linear-to-tr from-primary/5 to-primary/10;
+    @apply font-poppins bg-primary-50;
   }
 }

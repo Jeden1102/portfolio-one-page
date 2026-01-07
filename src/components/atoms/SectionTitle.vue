@@ -4,7 +4,7 @@
 
     <span
       v-if="textFeatured"
-      class="bg-linear-to-r from-secondary to-primary inline-block text-transparent bg-clip-text"
+      class="bg-linear-to-r from-secondary to-primary-500 inline-block text-transparent bg-clip-text"
     >
       {{ textFeatured }}
     </span>

@@ -2,7 +2,7 @@
   <section class="flex flex-col gap-4" id="about">
     <SectionTitle tag="h2" text="Frontend" textFeatured="Developer" />
 
-    <p class="text-secondary">
+    <p class="text-secondary max-w-150 lg:text-lg">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, doloremque eum? Aliquid
       non temporibus labore voluptatum corporis reprehenderit quisquam modi enim cupiditate eveniet
       illo at harum debitis dolorum dolorem, ducimus amet sapiente autem repellendus quis nulla quae

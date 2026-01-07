@@ -13,7 +13,7 @@ defineProps<{
   <Card>
     <div class="flex items-center gap-3 mb-2">
       <div
-        class="grid place-content-center size-10 rounded-lg bg-primary/10 text-primary border border-primary/20"
+        class="grid place-content-center size-10 rounded-lg bg-primary-500/10 text-primary-500 border border-primary-500/20"
       >
         <i :class="['pi', icon, 'text-xl']"></i>
       </div>

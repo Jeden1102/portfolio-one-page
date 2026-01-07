@@ -2,7 +2,7 @@
   <section class="flex flex-col gap-6" id="skills">
     <SectionTitle tag="h2" text="Things I'm" textFeatured="Great at" />
 
-    <p class="text-secondary max-w-3xl leading-relaxed">
+    <p class="text-secondary max-w-150 lg:text-lg leading-relaxed">
       Moje doświadczenie skupia się na tworzeniu kompletnych rozwiązań webowych. Poniżej znajdziesz
       technologie, w których czuję się najpewniej i które wykorzystuję na co dzień.
     </p>

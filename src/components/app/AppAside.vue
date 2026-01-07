@@ -2,7 +2,7 @@
   <aside>
     <AppCard class="flex flex-col gap-4 lg:w-90 lg:min-w-90" isAnimated>
       <div class="flex gap-6 w-fit items-center">
-        <div class="bg-primary/20 rounded-lg p-2 border border-primary/20">
+        <div class="bg-primary-500 rounded-lg p-2">
           <Vue3Lottie :animationData="Developer" :height="64" :width="64" :speed="0.5" />
         </div>
 
@@ -15,9 +15,7 @@
         </div>
       </div>
 
-      <hr class="text-primary/10 my-2" />
-
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4 my-4">
         <ContactBox
           v-for="contact in contactForms"
           :title="contact.title"
@@ -26,8 +24,6 @@
           :uri="contact.uri"
         />
       </div>
-
-      <hr class="text-primary/10 my-2" />
 
       <div class="flex justify-center gap-4">
         <SocialBox
@@ -38,7 +34,7 @@
         />
       </div>
 
-      <Button to="/Dominik-Raducki-CV.pdf" variant="primary"> Pobierz CV </Button>
+      <Button to="/Dominik-Raducki-CV.pdf" variant="primary" class="mt-2"> Pobierz CV </Button>
     </AppCard>
   </aside>
 </template>
