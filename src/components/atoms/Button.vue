@@ -1,3 +1,28 @@
+<template>
+  <component
+    :is="tag"
+    ref="buttonRef"
+    :href="to"
+    :class="[
+      'group relative inline-flex cursor-pointer items-center justify-center  overflow-hidden  font-medium transition-all duration-300',
+      variantClasses[variant],
+      sizeClasses[size],
+    ]"
+    @mousemove="handleMouseMove"
+  >
+    <div
+      class="pointer-events-none absolute -inset-px opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+      :style="{
+        background: `radial-gradient(600px circle at ${mousePos.x}px ${mousePos.y}px, ${glowColor}, transparent 40%)`,
+      }"
+    />
+
+    <span class="relative z-10 flex items-center gap-2">
+      <slot />
+    </span>
+  </component>
+</template>
+
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
@@ -41,28 +66,3 @@ const glowColor = computed(() => {
   return 'rgba52, 73, 94, 0.4)'
 })
 </script>
-
-<template>
-  <component
-    :is="tag"
-    ref="buttonRef"
-    :href="to"
-    :class="[
-      'group relative inline-flex cursor-pointer items-center justify-center  overflow-hidden  font-medium transition-all duration-300',
-      variantClasses[variant],
-      sizeClasses[size],
-    ]"
-    @mousemove="handleMouseMove"
-  >
-    <div
-      class="pointer-events-none absolute -inset-px opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-      :style="{
-        background: `radial-gradient(600px circle at ${mousePos.x}px ${mousePos.y}px, ${glowColor}, transparent 40%)`,
-      }"
-    />
-
-    <span class="relative z-10 flex items-center gap-2">
-      <slot />
-    </span>
-  </component>
-</template>

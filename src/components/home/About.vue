@@ -1,26 +1,40 @@
 <template>
   <section class="flex flex-col gap-4" id="about">
-    <SectionTitle tag="h2" text="Frontend" textFeatured="Developer" />
+    <SectionTitle
+      tag="h2"
+      :text="$t('home.about.title')"
+      :textFeatured="$t('home.about.titleFeatured')"
+    />
 
     <SectionDescription>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, doloremque eum? Aliquid
-      non temporibus labore voluptatum corporis reprehenderit quisquam modi enim cupiditate eveniet
-      illo at harum debitis dolorum dolorem, ducimus amet sapiente autem repellendus quis nulla quae
-      incidunt. Maiores odio sapiente nostrum dolorum consectetur impedit odit beatae ut labore
-      quasi.
+      {{ $t('home.about.description') }}
     </SectionDescription>
 
-    <Numbers :numbers class="mt-4" />
+    <Numbers :numbers="translatedNumbers" class="mt-4" />
   </section>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import SectionDescription from '../atoms/SectionDescription.vue'
 import SectionTitle from '../atoms/SectionTitle.vue'
 import Numbers from '../molecules/Numbers.vue'
 
-const numbers = [
-  { prefix: '+', label: 'Years of commercial experience', from: 0, to: 3 },
-  { prefix: '+', label: 'Projects participated in', from: 0, to: 20 },
-]
+const { t } = useI18n()
+
+const translatedNumbers = computed(() => [
+  {
+    prefix: '+',
+    label: t('home.about.stats.experience'),
+    from: 0,
+    to: 3,
+  },
+  {
+    prefix: '+',
+    label: t('home.about.stats.projects'),
+    from: 0,
+    to: 20,
+  },
+])
 </script>

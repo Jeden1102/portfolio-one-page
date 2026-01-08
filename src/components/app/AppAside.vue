@@ -9,15 +9,14 @@
         <div>
           <h1 class="text-2xl font-semibold">Dominik Raducki</h1>
           <Badge> Frontend Developer </Badge>
-          <p class="font-light text-sm mt-2">
-            Specializing in <b>Vue, Nuxt and Drupal</b> technologies
-          </p>
+          <p class="font-light text-sm mt-2" v-html="$t('aside.specialization')"></p>
         </div>
       </div>
 
       <div class="flex flex-col gap-4 my-4">
         <ContactBox
           v-for="contact in contactForms"
+          :key="contact.title"
           :title="contact.title"
           :value="contact.value"
           :icon="contact.icon"
@@ -28,18 +27,23 @@
       <div class="flex justify-center gap-4">
         <SocialBox
           v-for="social in socials"
+          :key="social.title"
           :title="social.title"
           :icon="social.icon"
           :uri="social.uri"
         />
       </div>
 
-      <Button to="/Dominik-Raducki-CV.pdf" variant="primary" class="mt-2"> Pobierz CV </Button>
+      <Button to="/Dominik-Raducki-CV.pdf" variant="primary" class="mt-2">
+        {{ $t('aside.downloadCv') }}
+      </Button>
     </AppCard>
   </aside>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { Vue3Lottie } from 'vue3-lottie'
 
 import AppCard from '@/components/app/AppCard.vue'
@@ -49,36 +53,38 @@ import Developer from '@/assets/developer.json'
 import Button from '../atoms/Button.vue'
 import Badge from '../atoms/Badge.vue'
 
-const contactForms = [
+const { t } = useI18n()
+
+const contactForms = computed(() => [
   {
-    title: 'Phone',
-    value: '+49 176 1234567',
+    title: t('aside.contact.phone'),
+    value: '+49 516 525 133',
     icon: 'pi pi-phone',
-    uri: 'tel:+491761234567',
+    uri: 'tel:+49516525133',
   },
   {
-    title: 'Email',
-    value: '2GjyH@example.com',
+    title: t('aside.contact.email'),
+    value: 'dom.rad14@gmail.com',
     icon: 'pi pi-envelope',
-    uri: 'mailto:2GjyH@example.com',
+    uri: 'mailto:dom.rad14@gmail.com',
   },
   {
-    title: 'Birthday',
-    value: 'January 28',
+    title: t('aside.contact.birthday'),
+    value: t('aside.contact.birthdayValue'),
     icon: 'pi pi-calendar',
   },
   {
-    title: 'Location',
-    value: 'Poland, Warsaw',
+    title: t('aside.contact.location'),
+    value: t('aside.contact.locationValue'),
     icon: 'pi pi-map-marker',
   },
-]
+])
 
 const socials = [
   {
     icon: 'pi pi-github',
     title: 'GitHub',
-    uri: 'https://github.com/dominik-raducki',
+    uri: 'https://github.com/Jeden1102',
   },
   {
     icon: 'pi pi-linkedin',

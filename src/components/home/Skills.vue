@@ -1,9 +1,13 @@
 <template>
   <section class="flex flex-col gap-6" id="skills">
-    <SectionTitle tag="h2" text="Things I'm" textFeatured="Great at" />
+    <SectionTitle
+      tag="h2"
+      :text="$t('home.skills.title')"
+      :textFeatured="$t('home.skills.titleFeatured')"
+    />
 
     <SectionDescription>
-      Moje doświadczenie skupia się na tworzeniu kompletnych rozwiązań webowych.
+      {{ $t('home.skills.description') }}
     </SectionDescription>
 
     <Tabs v-model="activeCategory" :items="categories" />
@@ -14,7 +18,7 @@
         :key="skill.title"
         :title="skill.title"
         :icon="skill.icon"
-        :category="skill.category"
+        :category="skill.categoryLabel"
       >
         {{ skill.description }}
       </Skill>
@@ -24,50 +28,57 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import SectionTitle from '../atoms/SectionTitle.vue'
 import Skill from '../molecules/Skill.vue'
 import Tabs from '../molecules/Tabs.vue'
 import SectionDescription from '../atoms/SectionDescription.vue'
 
-const categories = [
-  { label: 'Wszystkie', value: 'all' },
-  { label: 'Frontend', value: 'Frontend' },
-  { label: 'Backend', value: 'Backend' },
-  { label: 'Inne', value: 'Inne' },
-]
+const { t } = useI18n()
+
+const categories = computed(() => [
+  { label: t('home.skills.categories.all'), value: 'all' },
+  { label: t('home.skills.categories.frontend'), value: 'Frontend' },
+  { label: t('home.skills.categories.backend'), value: 'Backend' },
+  { label: t('home.skills.categories.other'), value: 'Inne' },
+])
 
 const activeCategory = ref('all')
 
-const skills = [
+const skills = computed(() => [
   {
     title: 'HTML5 & CSS3',
     category: 'Frontend',
+    categoryLabel: t('home.skills.categories.frontend'),
     icon: 'pi-code',
-    description: 'Budowanie semantycznych i responsywnych stron...',
+    description: t('home.skills.items.html'),
   },
   {
     title: 'Vue.js 3',
     category: 'Frontend',
+    categoryLabel: t('home.skills.categories.frontend'),
     icon: 'pi-vimeo',
-    description: 'Tworzenie zaawansowanych aplikacji typu SPA...',
+    description: t('home.skills.items.vue'),
   },
   {
     title: 'TypeScript',
     category: 'Inne',
+    categoryLabel: t('home.skills.categories.other'),
     icon: 'pi-shield',
-    description: 'Pisanie bezpiecznego kodu z silnym typowaniem...',
+    description: t('home.skills.items.ts'),
   },
   {
     title: 'Node.js',
     category: 'Backend',
+    categoryLabel: t('home.skills.categories.backend'),
     icon: 'pi-server',
-    description: 'Projektowanie skalowalnych API i mikroserwisów...',
+    description: t('home.skills.items.node'),
   },
-]
+])
 
 const filteredSkills = computed(() => {
-  if (activeCategory.value === 'all') return skills
-  return skills.filter((skill) => skill.category === activeCategory.value)
+  if (activeCategory.value === 'all') return skills.value
+  return skills.value.filter((skill) => skill.category === activeCategory.value)
 })
 </script>
 

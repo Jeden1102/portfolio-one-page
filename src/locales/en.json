@@ -1,5 +1,49 @@
 {
-    "message": {
-      "hello": "hello"
+  "aside": {
+    "specialization": "Specializing in <b>Vue, Nuxt and Drupal</b> technologies",
+    "downloadCv": "Download CV",
+    "contact": {
+      "phone": "Phone",
+      "email": "Email",
+      "birthday": "Birthday",
+      "birthdayValue": "January 28",
+      "location": "Location",
+      "locationValue": "Poland, Warsaw"
+    }
+  },
+  "nav": {
+    "start": "home",
+    "about": "about",
+    "skills": "skills",
+    "projects": "projects",
+    "contact": "contact"
+  },
+  "home": {
+    "about": {
+      "title": "Frontend",
+      "titleFeatured": "Developer",
+      "description": "Dynamic frontend developer focused on building scalable and user-friendly web applications...",
+      "stats": {
+        "experience": "Years of commercial experience",
+        "projects": "Projects participated in"
+      }
+    },
+    "skills": {
+      "title": "Things I'm",
+      "titleFeatured": "Great at",
+      "description": "My experience focuses on creating complete web solutions.",
+      "categories": {
+        "all": "All",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "other": "Other"
+      },
+      "items": {
+        "html": "Building semantic and responsive websites...",
+        "vue": "Creating advanced SPA applications...",
+        "ts": "Writing safe code with strong typing...",
+        "node": "Designing scalable APIs and microservices..."
+      }
     }
   }
+}

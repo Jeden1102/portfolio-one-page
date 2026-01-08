@@ -1,52 +1,55 @@
 <template>
   <BubbleMenu
     :logo="h(AppLogo)"
-    :items="items"
+    :items="navItems"
     className="lg:max-w-[calc(100%-360px)] lg:left-auto lg:w-full"
     useFixedPosition
   />
 </template>
 
 <script setup lang="ts">
+import { h, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import BubbleMenu from '../bits/BubbleMenu/BubbleMenu.vue'
-import { h } from 'vue'
 import AppLogo from './AppLogo.vue'
 
-const items = [
+const { t } = useI18n()
+
+const navItems = computed(() => [
   {
-    label: 'start',
+    label: t('nav.start'),
     href: '#start',
     ariaLabel: 'Start',
     rotation: -8,
     hoverStyles: { bgColor: '#41B883', textColor: '#ffffff' },
   },
   {
-    label: 'about',
+    label: t('nav.about'),
     href: '#about',
     ariaLabel: 'About',
     rotation: 8,
     hoverStyles: { bgColor: '#34495E', textColor: '#ffffff' },
   },
   {
-    label: 'skills',
+    label: t('nav.skills'),
     href: '#skills',
     ariaLabel: 'Skills',
     rotation: 8,
     hoverStyles: { bgColor: '#41B883', textColor: '#ffffff' },
   },
   {
-    label: 'projects',
+    label: t('nav.projects'),
     href: '#projects',
     ariaLabel: 'Projects',
     rotation: 8,
     hoverStyles: { bgColor: '#34495E', textColor: '#ffffff' },
   },
   {
-    label: 'contact',
+    label: t('nav.contact'),
     href: '#contact',
     ariaLabel: 'Contact',
     rotation: -8,
     hoverStyles: { bgColor: '#41B883', textColor: '#ffffff' },
   },
-]
+])
 </script>

@@ -1,5 +1,49 @@
 {
-    "message": {
-      "hello": "hejka"
+  "aside": {
+    "specialization": "Specjalizuję się w technologiach <b>Vue, Nuxt i Drupal</b>",
+    "downloadCv": "Pobierz CV",
+    "contact": {
+      "phone": "Telefon",
+      "email": "Email",
+      "birthday": "Data urodzenia",
+      "birthdayValue": "28 Stycznia 2002",
+      "location": "Lokalizacja",
+      "locationValue": "Polska, Warszawa / Remote"
+    }
+  },
+  "nav": {
+    "start": "start",
+    "about": "o mnie",
+    "skills": "umiejętności",
+    "projects": "projekty",
+    "contact": "kontakt"
+  },
+  "home": {
+    "about": {
+      "title": "Frontend",
+      "titleFeatured": "Developer",
+      "description": "Jestem programistą z pasją do tworzenia czystych i wydajnych interfejsów...",
+      "stats": {
+        "experience": "Lata doświadczenia komercyjnego",
+        "projects": "Ukończone projekty"
+      }
+    },
+    "skills": {
+      "title": "Moje",
+      "titleFeatured": "umiejętności",
+      "description": "Moje doświadczenie skupia się na tworzeniu kompletnych rozwiązań webowych.",
+      "categories": {
+        "all": "Wszystkie",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "other": "Inne"
+      },
+      "items": {
+        "html": "Budowanie semantycznych i responsywnych stron...",
+        "vue": "Tworzenie zaawansowanych aplikacji typu SPA...",
+        "ts": "Pisanie bezpiecznego kodu z silnym typowaniem...",
+        "node": "Projektowanie skalowalnych API i mikroserwisów..."
+      }
     }
   }
+}

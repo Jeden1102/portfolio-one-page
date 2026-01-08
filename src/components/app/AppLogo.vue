@@ -11,5 +11,3 @@ import { Vue3Lottie } from 'vue3-lottie'
 
 import Code from '@/assets/code.json'
 </script>
-
-<style scoped></style>
