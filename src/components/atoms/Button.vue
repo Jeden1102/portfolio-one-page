@@ -4,10 +4,12 @@ import { computed, ref } from 'vue'
 interface Props {
   to?: string
   variant?: 'primary' | 'secondary'
+  size?: 'small' | 'medium'
 }
 
 const props = withDefaults(defineProps<Props>(), {
   variant: 'primary',
+  size: 'medium',
 })
 
 const buttonRef = ref<HTMLElement | null>(null)
@@ -29,6 +31,11 @@ const variantClasses = {
   secondary: 'bg-secondary text-white',
 }
 
+const sizeClasses = {
+  small: 'px-4 py-1.5 rounded-md',
+  medium: 'px-8 py-3 rounded-xl',
+}
+
 const glowColor = computed(() => {
   if (props.variant === 'primary') return 'rgba(65, 184, 131, 0.4)'
   return 'rgba52, 73, 94, 0.4)'
@@ -41,8 +48,9 @@ const glowColor = computed(() => {
     ref="buttonRef"
     :href="to"
     :class="[
-      'group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden rounded-xl font-medium transition-all duration-300 focus:outline-none',
+      'group relative inline-flex cursor-pointer items-center justify-center  overflow-hidden  font-medium transition-all duration-300',
       variantClasses[variant],
+      sizeClasses[size],
     ]"
     @mousemove="handleMouseMove"
   >

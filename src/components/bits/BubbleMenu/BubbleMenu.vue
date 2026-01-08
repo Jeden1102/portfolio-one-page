@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import LanguageSwitcher from '@/components/atoms/LanguageSwitcher.vue'
 import { gsap } from 'gsap'
 import {
   computed,
@@ -268,45 +269,48 @@ watch(
       </span>
     </div>
 
-    <button
-      type="button"
-      :class="[
-        'bubble toggle-bubble menu-btn',
-        isMenuOpen ? 'open' : '',
-        'inline-flex flex-col items-center justify-center',
-        'rounded-full',
-        'bg-white',
-        'shadow-[0_4px_16px_rgba(0,0,0,0.12)]',
-        'pointer-events-auto',
-        'w-12 h-12 md:w-14 md:h-14',
-        'border-0 cursor-pointer p-0',
-        'will-change-transform',
-      ]"
-      @click="handleToggle"
-      :aria-label="menuAriaLabel"
-      :aria-pressed="isMenuOpen"
-      :style="{ background: menuBg }"
-    >
-      <span
-        class="block mx-auto rounded-[2px] menu-line"
-        :style="{
-          width: '26px',
-          height: '2px',
-          background: menuContentColor,
-          transform: isMenuOpen ? 'translateY(4px) rotate(45deg)' : 'none',
-        }"
-      />
-      <span
-        class="block mx-auto rounded-[2px] menu-line short"
-        :style="{
-          marginTop: '6px',
-          width: '26px',
-          height: '2px',
-          background: menuContentColor,
-          transform: isMenuOpen ? 'translateY(-4px) rotate(-45deg)' : 'none',
-        }"
-      />
-    </button>
+    <div class="flex items-center gap-4">
+      <LanguageSwitcher />
+      <button
+        type="button"
+        :class="[
+          'bubble toggle-bubble menu-btn',
+          isMenuOpen ? 'open' : '',
+          'inline-flex flex-col items-center justify-center',
+          'rounded-full',
+          'bg-white',
+          'shadow-[0_4px_16px_rgba(0,0,0,0.12)]',
+          'pointer-events-auto',
+          'w-12 h-12 md:w-14 md:h-14',
+          'border-0 cursor-pointer p-0',
+          'will-change-transform',
+        ]"
+        @click="handleToggle"
+        :aria-label="menuAriaLabel"
+        :aria-pressed="isMenuOpen"
+        :style="{ background: menuBg }"
+      >
+        <span
+          class="block mx-auto rounded-[2px] menu-line"
+          :style="{
+            width: '26px',
+            height: '2px',
+            background: menuContentColor,
+            transform: isMenuOpen ? 'translateY(4px) rotate(45deg)' : 'none',
+          }"
+        />
+        <span
+          class="block mx-auto rounded-[2px] menu-line short"
+          :style="{
+            marginTop: '6px',
+            width: '26px',
+            height: '2px',
+            background: menuContentColor,
+            transform: isMenuOpen ? 'translateY(-4px) rotate(-45deg)' : 'none',
+          }"
+        />
+      </button>
+    </div>
   </nav>
 
   <div

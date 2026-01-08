@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col p-4 lg:flex-row pt-20 lg:py-8 gap-6 max-w-320 mx-auto" id="start">
+  <div class="flex flex-col p-4 lg:flex-row pt-20 lg:py-8 gap-6 max-w-350 mx-auto" id="start">
     <AppAside />
     <div class="w-full">
       <header>

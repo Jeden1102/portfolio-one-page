@@ -2,14 +2,15 @@
   <section class="flex flex-col gap-6" id="skills">
     <SectionTitle tag="h2" text="Things I'm" textFeatured="Great at" />
 
-    <p class="text-secondary max-w-150 lg:text-lg leading-relaxed">
-      Moje doświadczenie skupia się na tworzeniu kompletnych rozwiązań webowych. Poniżej znajdziesz
-      technologie, w których czuję się najpewniej i które wykorzystuję na co dzień.
-    </p>
+    <SectionDescription>
+      Moje doświadczenie skupia się na tworzeniu kompletnych rozwiązań webowych.
+    </SectionDescription>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+    <Tabs v-model="activeCategory" :items="categories" />
+
+    <TransitionGroup name="list" tag="div" class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <Skill
-        v-for="skill in skills"
+        v-for="skill in filteredSkills"
         :key="skill.title"
         :title="skill.title"
         :icon="skill.icon"
@@ -17,42 +18,76 @@
       >
         {{ skill.description }}
       </Skill>
-    </div>
+    </TransitionGroup>
   </section>
 </template>
 
 <script setup lang="ts">
+import { ref, computed } from 'vue'
 import SectionTitle from '../atoms/SectionTitle.vue'
 import Skill from '../molecules/Skill.vue'
+import Tabs from '../molecules/Tabs.vue'
+import SectionDescription from '../atoms/SectionDescription.vue'
+
+const categories = [
+  { label: 'Wszystkie', value: 'all' },
+  { label: 'Frontend', value: 'Frontend' },
+  { label: 'Backend', value: 'Backend' },
+  { label: 'Inne', value: 'Inne' },
+]
+
+const activeCategory = ref('all')
 
 const skills = [
   {
     title: 'HTML5 & CSS3',
-    category: 'Frontend Developer',
+    category: 'Frontend',
     icon: 'pi-code',
-    description:
-      'Budowanie semantycznych, dostępnych i responsywnych stron internetowych z wykorzystaniem nowoczesnych standardów i metodologii (BEM, Tailwind).',
+    description: 'Budowanie semantycznych i responsywnych stron...',
   },
   {
     title: 'Vue.js 3',
-    category: 'Frontend Developer',
+    category: 'Frontend',
     icon: 'pi-vimeo',
-    description:
-      'Tworzenie zaawansowanych aplikacji typu SPA przy użyciu Composition API, Pinia oraz ekosystemu Vite. Stawiam na czysty kod i wydajność.',
+    description: 'Tworzenie zaawansowanych aplikacji typu SPA...',
   },
   {
     title: 'TypeScript',
-    category: 'Core Development',
+    category: 'Inne',
     icon: 'pi-shield',
-    description:
-      'Pisanie bezpiecznego kodu z silnym typowaniem, co pozwala na unikanie błędów w runtime i znacząco ułatwia pracę w zespole.',
+    description: 'Pisanie bezpiecznego kodu z silnym typowaniem...',
   },
   {
     title: 'Node.js',
-    category: 'Backend Developer',
+    category: 'Backend',
     icon: 'pi-server',
-    description:
-      'Projektowanie skalowalnych API i mikroserwisów. Doświadczenie w pracy z Express, NestJS oraz integracji z bazami SQL/NoSQL.',
+    description: 'Projektowanie skalowalnych API i mikroserwisów...',
   },
 ]
+
+const filteredSkills = computed(() => {
+  if (activeCategory.value === 'all') return skills
+  return skills.filter((skill) => skill.category === activeCategory.value)
+})
 </script>
+
+<style>
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: scale(0.9) translateY(10px);
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.4s ease;
+}
+
+.list-move {
+  transition: transform 0.4s ease;
+}
+
+.list-leave-active {
+  position: absolute;
+}
+</style>
