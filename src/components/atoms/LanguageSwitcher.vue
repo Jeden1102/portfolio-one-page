@@ -1,7 +1,7 @@
 <template>
   <button
     @click="toggleLocale"
-    class="px-4 py-2 rounded-md cursor-pointer pointer-events-auto border border-white/10 hover:bg-white/5 transition-all font-bold uppercase tracking-wider text-primary-500"
+    class="cursor-pointer pointer-events-auto font-bold uppercase tracking-wider text-primary-500"
   >
     {{ nextLocale }}
   </button>

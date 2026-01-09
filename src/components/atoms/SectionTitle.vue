@@ -1,7 +1,7 @@
 <template>
   <component
     :is="tag"
-    class="text-5xl sm:text-7xl xl:text-9xl uppercase font-extrabold flex flex-col"
+    class="text-4xl sm:text-7xl xl:text-8xl uppercase font-extrabold flex flex-col"
   >
     <span>{{ text }}</span>
 

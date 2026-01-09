@@ -270,7 +270,20 @@ watch(
     </div>
 
     <div class="flex items-center gap-4">
-      <LanguageSwitcher />
+      <LanguageSwitcher
+        :class="[
+          'bubble toggle-bubble menu-btn',
+          isMenuOpen ? 'open' : '',
+          'inline-flex flex-col items-center justify-center',
+          'rounded-full',
+          'bg-white',
+          'shadow-[0_4px_16px_rgba(0,0,0,0.12)]',
+          'pointer-events-auto',
+          'w-12 h-12 md:w-14 md:h-14',
+          'border-0 cursor-pointer p-0',
+          'will-change-transform rounded-full',
+        ]"
+      />
       <button
         type="button"
         :class="[

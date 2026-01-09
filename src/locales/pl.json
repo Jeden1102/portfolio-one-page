@@ -1,6 +1,6 @@
 {
   "aside": {
-    "specialization": "Specjalizuję się w technologiach <b>Vue, Nuxt i Drupal</b>",
+    "specialization": "Frontend Developer | <b>Vue, Nuxt & TypeScript</b> Expert",
     "downloadCv": "Pobierz CV",
     "contact": {
       "phone": "Telefon",
@@ -8,7 +8,7 @@
       "birthday": "Data urodzenia",
       "birthdayValue": "28 Stycznia 2002",
       "location": "Lokalizacja",
-      "locationValue": "Polska, Warszawa / Remote"
+      "locationValue": "Warszawa / Remote"
     }
   },
   "nav": {
@@ -22,27 +22,37 @@
     "about": {
       "title": "Frontend",
       "titleFeatured": "Developer",
-      "description": "Jestem programistą z pasją do tworzenia czystych i wydajnych interfejsów...",
+      "description": "Programista z 3,5-letnim doświadczeniem, swobodnie poruszający się między architekturą Vue 2 a nowoczesnym Composition API w Vue 3. Specjalizuję się w ekosystemie Nuxt (od wersji 3 oraz 4). Mam otwartą głowę na nowe rozwiązania i stale rozwijam swój stack o technologie, które realnie poprawiają jakość interfejsów i komfort pracy deweloperskiej.",
       "stats": {
-        "experience": "Lata doświadczenia komercyjnego",
-        "projects": "Ukończone projekty"
+        "experience": "Lata doświadczenia",
+        "projects": "Zrealizowane projekty"
       }
     },
     "skills": {
       "title": "Moje",
       "titleFeatured": "umiejętności",
-      "description": "Moje doświadczenie skupia się na tworzeniu kompletnych rozwiązań webowych.",
+      "description": "Moje doświadczenie obejmuje zarówno zaawansowany frontend, jak i integracje z API czy systemami CMS. Szczegółowa lista moich umiejętności podzieloną na kategorie:",
       "categories": {
         "all": "Wszystkie",
         "frontend": "Frontend",
-        "backend": "Backend",
-        "other": "Inne"
+        "backend": "Backend / CMS",
+        "other": "Narzędzia"
       },
       "items": {
-        "html": "Budowanie semantycznych i responsywnych stron...",
-        "vue": "Tworzenie zaawansowanych aplikacji typu SPA...",
-        "ts": "Pisanie bezpiecznego kodu z silnym typowaniem...",
-        "node": "Projektowanie skalowalnych API i mikroserwisów..."
+        "vue": "Vue 3 (Composition API) / Vue 2 (Options API), Pinia, reactivity i optymalizacja komponentów.",
+        "nuxt": "Renderowanie hybrydowe (SSR/SSG), optymalizacja Core Web Vitals i zaawansowany routing.",
+        "typescript": "Budowanie aplikacji z wykorzystaniem TypeScript.",
+        "html": "Tworzenie wydajnych, semantycznych struktur DOM z naciskiem na dostępność i standardy W3C.",
+        "css": "Zaawansowany Responsive Design przy użyciu plain CSS oraz prepressorów typu SCSS.",
+        "tailwind": "Budowa szybkich interfejsów Utility-First oraz Custom Design Systems.",
+        "php": "Programowanie backendowe, integracja z bazami danych i obsługa API.",
+        "drupal": "Zarządzanie treścią, budowa modułów i headless CMS architecture.",
+        "api": "Integracje GraphQL, REST API oraz komunikacja WebSockets.",
+        "other_ui": "Znajomość bibliotek UI shadcn-vue, Nuxt UI, PrimeVue, Vuetify.",
+        "git": "Kontrola wersji git wraz z narzędziami GitHub, GitLab, Bitbucket.",
+        "jira": "Praca z ticketami, projektami i kanbanem. Współpraca w metodologii Scrum.",
+        "prisma": "Zarządzanie bazami danych i budowa bezpiecznych warstw dostępu do danych (ORM).",
+        "vite": "Szybki tooling, optymalizacja bundle'a i konfiguracja środowiska deweloperskiego."
       }
     }
   }
