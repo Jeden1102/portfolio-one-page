@@ -54,6 +54,11 @@
         "prisma": "Zarządzanie bazami danych i budowa bezpiecznych warstw dostępu do danych (ORM).",
         "vite": "Szybki tooling, optymalizacja bundle'a i konfiguracja środowiska deweloperskiego."
       }
+    },
+    "projects": {
+      "title": "Moje",
+      "titleFeatured": "projekty",
+      "description": "Moje doświadczenie obejmuje zarówno zaawansowany frontend, jak i integracje z API czy systemami CMS. Szczegółowa lista moich umiejętności podzieloną na kategorie:"
     }
   }
 }

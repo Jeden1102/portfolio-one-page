@@ -10,6 +10,7 @@
         <AppCard isAnimated class="flex flex-col gap-10 lg:p-6 lg:gap-12">
           <About />
           <Skills />
+          <Projects />
         </AppCard>
       </main>
     </div>
@@ -22,4 +23,5 @@ import About from './components/home/About.vue'
 import AppCard from './components/app/AppCard.vue'
 import AppNav from './components/app/AppNav.vue'
 import Skills from './components/home/Skills.vue'
+import Projects from './components/home/Projects.vue'
 </script>
