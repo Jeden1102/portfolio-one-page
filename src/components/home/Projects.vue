@@ -13,7 +13,7 @@
     <Tabs v-model="activeCategory" :items="categories" />
 
     <TransitionGroup name="list" tag="div" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <Project
+      <ProjectTeaser
         v-for="project in filteredProjects"
         :key="project.title"
         v-bind="project"
@@ -22,6 +22,7 @@
     </TransitionGroup>
 
     <ProjectModal
+      v-if="selectedProject"
       :is-open="!!selectedProject"
       :project="selectedProject"
       @close="selectedProject = null"
@@ -30,45 +31,81 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, type ComputedRef } from 'vue'
 import { useI18n } from 'vue-i18n'
 import SectionTitle from '../atoms/SectionTitle.vue'
 import SectionDescription from '../atoms/SectionDescription.vue'
-import Project from '../molecules/Project.vue'
+import ProjectTeaser from '../molecules/ProjectTeaser.vue'
 import ProjectModal from '../molecules/ProjectModal.vue'
 import Tabs from '../molecules/Tabs.vue'
+import type { Project } from '../../types'
 
 const { t } = useI18n()
 
 const activeCategory = ref('all')
-const selectedProject = ref(null)
+const selectedProject = ref<null | Project>(null)
 
 const categories = computed(() => [
-  { label: t('home.skills.categories.all'), value: 'all' },
-  { label: 'Komercyjne', value: 'commercial' },
-  { label: 'Prywatne', value: 'private' },
+  { label: t('home.projects.categories.all'), value: 'all' },
+  { label: t('home.projects.categories.commercial'), value: 'commercial' },
+  { label: t('home.projects.categories.private'), value: 'private' },
 ])
 
-const projects = computed(() => [
+const projects: ComputedRef<Project[]> = computed(() => [
   {
-    title: 'E-commerce Platform',
+    title: 'Link4',
     category: 'commercial',
     image: '/projects/aipplied.png',
-    description:
-      'Zaawansowana platforma sprzedażowa zbudowana w Nuxt 3. System zawiera pełny koszyk, integrację z płatnościami oraz customowy CMS do zarządzania asortymentem.',
-    technologies: ['Nuxt 3', 'TypeScript', 'Pinia', 'Tailwind', 'Prisma'],
-    gitUrl: 'https://github.com/...',
-    liveUrl: 'https://demo.com',
+    description: t('home.projects.link4.description'),
+    technologies: [
+      'Drupal',
+      'TypeScript',
+      'Vue 3',
+      'SCSS',
+      'Jira',
+      'BitBucket',
+      'Jenkins',
+      'Docker',
+    ],
+    liveUrl: 'https://link4.pl/',
   },
   {
-    title: 'Portfolio 2026',
-    category: 'private',
-    image: '/projects/portfolio.jpg',
-    description:
-      'Moja strona osobista. Miejsce, gdzie testuję najnowsze funkcjonalności Nuxt 4 i bibliotekę shadcn/vue.',
-    technologies: ['Vue 3', 'Nuxt 4', 'Vite', 'Three.js'],
-    gitUrl: 'https://github.com/...',
-    liveUrl: 'https://moje-portfolio.pl',
+    title: 'Enea Operator',
+    category: 'commercial',
+    image: '/projects/enea.png',
+    description: t('home.projects.enea.description'),
+    technologies: ['Drupal', 'TypeScript', 'Vue 3', 'SCSS'],
+    liveUrl: 'https://www.operator.enea.pl/',
+  },
+  {
+    title: 'Mooveno',
+    category: 'commercial',
+    image: '/projects/mooveno.png',
+    description: t('home.projects.mooveno.description'),
+    technologies: ['Drupal', 'TypeScript', 'Vue 3', 'SCSS'],
+    liveUrl: 'https://www.mooveno.pl/',
+  },
+  {
+    title: 'HTI',
+    category: 'commercial',
+    image: '/projects/hti.png',
+    description: t('home.projects.hti.description'),
+    technologies: ['Drupal', 'TypeScript', 'Vue 3', 'SCSS'],
+    liveUrl: 'https://hti-bp.pl/',
+  },
+  {
+    title: 'Cards',
+    category: 'commercial',
+    image: '/projects/cards.png',
+    description: t('home.projects.cards.description'),
+    technologies: ['Drupal', 'TypeScript', 'Vue 3', 'SCSS'],
+  },
+  {
+    title: 'IoT Dashboard',
+    category: 'commercial',
+    image: '/projects/iot.png',
+    description: t('home.projects.iot.description'),
+    technologies: ['Drupal', 'TypeScript', 'Vue 3', 'SCSS'],
   },
 ])
 

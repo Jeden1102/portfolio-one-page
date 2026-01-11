@@ -8,7 +8,7 @@
 
         <div>
           <h1 class="text-2xl font-semibold">Dominik Raducki</h1>
-          <Badge> Frontend Developer </Badge>
+          <BaseBadge> Frontend Developer </BaseBadge>
           <p class="font-light text-sm mt-2" v-html="$t('aside.specialization')"></p>
         </div>
       </div>
@@ -34,9 +34,9 @@
         />
       </div>
 
-      <Button to="/Dominik-Raducki-CV.pdf" variant="primary" class="mt-2">
+      <BaseButton to="/Dominik-Raducki-CV.pdf" variant="primary" class="mt-2" download>
         {{ $t('aside.downloadCv') }}
-      </Button>
+      </BaseButton>
     </AppCard>
   </aside>
 </template>
@@ -47,11 +47,11 @@ import { useI18n } from 'vue-i18n'
 import { Vue3Lottie } from 'vue3-lottie'
 
 import AppCard from '@/components/app/AppCard.vue'
-import ContactBox from '../molecules/ContactBox.vue'
-import SocialBox from '../molecules/SocialBox.vue'
+import ContactBox from '@/components/molecules/ContactBox.vue'
+import SocialBox from '@/components/molecules/SocialBox.vue'
 import Developer from '@/assets/developer.json'
-import Button from '../atoms/Button.vue'
-import Badge from '../atoms/Badge.vue'
+import BaseButton from '@/components/atoms/BaseButton.vue'
+import BaseBadge from '@/components/atoms/BaseBadge.vue'
 
 const { t } = useI18n()
 

@@ -10,8 +10,8 @@
 <script setup lang="ts">
 import { h, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import BubbleMenu from '../bits/BubbleMenu/BubbleMenu.vue'
-import AppLogo from './AppLogo.vue'
+import BubbleMenu from '@/components/bits/BubbleMenu/BubbleMenu.vue'
+import AppLogo from '@/components/app/AppLogo.vue'
 
 const { t } = useI18n()
 

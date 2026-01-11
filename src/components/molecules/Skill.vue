@@ -1,16 +1,5 @@
-<script setup lang="ts">
-import Badge from '../atoms/Badge.vue'
-import Card from './Card.vue'
-
-defineProps<{
-  title: string
-  category: string
-  icon: string
-}>()
-</script>
-
 <template>
-  <Card>
+  <Card bg="grid" class="bg-linear-to-bl from-gray-800 to-gray-950">
     <div class="flex items-center gap-3 mb-2">
       <div
         class="grid place-content-center size-10 rounded-lg bg-primary-500/10 text-primary-500 border border-primary-500/20"
@@ -22,10 +11,21 @@ defineProps<{
       </h3>
     </div>
 
-    <Badge>{{ category }}</Badge>
+    <BaseBadge>{{ category }}</BaseBadge>
 
-    <p class="text-gray-200 text-sm leading-relaxed mt-2">
+    <p class="text-gray-50 text-sm leading-relaxed mt-2">
       <slot />
     </p>
   </Card>
 </template>
+
+<script setup lang="ts">
+import BaseBadge from '../atoms/BaseBadge.vue'
+import Card from './Card.vue'
+
+defineProps<{
+  title: string
+  category: string
+  icon: string
+}>()
+</script>

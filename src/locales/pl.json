@@ -1,6 +1,6 @@
 {
   "aside": {
-    "specialization": "Frontend Developer | <b>Vue, Nuxt & TypeScript</b> Expert",
+    "specialization": "Specjalista w zakresie technologii <b>Vue, Nuxt oraz Drupal</b>",
     "downloadCv": "Pobierz CV",
     "contact": {
       "phone": "Telefon",
@@ -52,13 +52,41 @@
         "git": "Kontrola wersji git wraz z narzędziami GitHub, GitLab, Bitbucket.",
         "jira": "Praca z ticketami, projektami i kanbanem. Współpraca w metodologii Scrum.",
         "prisma": "Zarządzanie bazami danych i budowa bezpiecznych warstw dostępu do danych (ORM).",
-        "vite": "Szybki tooling, optymalizacja bundle'a i konfiguracja środowiska deweloperskiego."
+        "vite": "Szybki tooling, optymalizacja bundle'a i konfiguracja środowiska deweloperskiego.",
+        "docker": "Współpraca z Dockerem, zarządzanie kontami oraz skrypty do budowania obrazów Docker."
       }
     },
     "projects": {
       "title": "Moje",
       "titleFeatured": "projekty",
-      "description": "Moje doświadczenie obejmuje zarówno zaawansowany frontend, jak i integracje z API czy systemami CMS. Szczegółowa lista moich umiejętności podzieloną na kategorie:"
+      "description": "Moje doświadczenie obejmuje zarówno zaawansowany frontend, jak i integracje z API czy systemami CMS. Szczegółowa lista moich umiejętności podzieloną na kategorie:",
+      "categories": {
+        "all": "Wszystkie",
+        "commercial": "Komercyjne",
+        "private": "Prywatne"
+      },
+      "link4": {
+        "description": "Zaawansowany projekt w oparciu o Drupal."
+      },
+      "enea": {
+        "description": "Zaawansowany projekt w oparciu o Drupal."
+      },
+      "mooveno": {
+        "description": "Zaawansowany projekt w oparciu o Drupal."
+      },
+      "hti": {
+        "description": "Zaawansowany projekt w oparciu o Drupal."
+      },
+      "cards": {
+        "description": "Zaawansowany projekt w oparciu o Drupal."
+      },
+      "iot": {
+        "description": "Zaawansowany projekt w oparciu o Drupal."
+      }
+    },
+    "project": {
+      "seeDetails": "Zobacz szczegóły",
+      "live": "Zobacz live"
     }
   }
 }

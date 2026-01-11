@@ -2,6 +2,7 @@
   <button
     @click="toggleLocale"
     class="cursor-pointer pointer-events-auto font-bold uppercase tracking-wider text-primary-500"
+    aria-label="Change language"
   >
     {{ nextLocale }}
   </button>

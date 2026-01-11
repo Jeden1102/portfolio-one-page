@@ -10,20 +10,20 @@
       {{ $t('home.about.description') }}
     </SectionDescription>
 
-    <Numbers :numbers="translatedNumbers" class="mt-4" />
+    <Numbers :numbers="numbers" class="mt-4" />
   </section>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import SectionDescription from '../atoms/SectionDescription.vue'
-import SectionTitle from '../atoms/SectionTitle.vue'
-import Numbers from '../molecules/Numbers.vue'
+import SectionDescription from '@/components/atoms/SectionDescription.vue'
+import SectionTitle from '@/components/atoms/SectionTitle.vue'
+import Numbers from '@/components/molecules/Numbers.vue'
 
 const { t } = useI18n()
 
-const translatedNumbers = computed(() => [
+const numbers = computed(() => [
   {
     prefix: '+',
     label: t('home.about.stats.experience'),
@@ -34,7 +34,7 @@ const translatedNumbers = computed(() => [
     prefix: '+',
     label: t('home.about.stats.projects'),
     from: 0,
-    to: 20,
+    to: 30,
   },
 ])
 </script>

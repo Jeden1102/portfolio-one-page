@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-wrap gap-2 border-b border-white/10 pb-4">
-    <Button
+    <BaseButton
       v-for="tab in items"
       :key="tab.value"
       @click="handleClick(tab.value)"
@@ -8,12 +8,12 @@
       size="small"
     >
       {{ tab.label }}
-    </Button>
+    </BaseButton>
   </div>
 </template>
 
 <script setup lang="ts">
-import Button from '../atoms/Button.vue'
+import BaseButton from '../atoms/BaseButton.vue'
 
 type Item = {
   label: string

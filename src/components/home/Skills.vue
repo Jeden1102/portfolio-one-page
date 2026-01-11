@@ -145,6 +145,13 @@ const skills = computed(() => [
     icon: 'pi-cog',
     description: t('home.skills.items.vite'),
   },
+  {
+    title: 'Docker',
+    category: 'Inne',
+    categoryLabel: t('home.skills.categories.other'),
+    icon: 'pi-cog',
+    description: t('home.skills.items.docker'),
+  },
 ])
 
 const filteredSkills = computed(() => {
