@@ -3,11 +3,14 @@
     <div class="relative aspect-video rounded-lg overflow-hidden mb-4 border border-white/10">
       <img :src="image" :alt="title" class="w-full h-full object-cover" />
       <div
-        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4"
+        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4"
       >
-        <span class="text-white font-medium text-sm bg-primary-500 px-3 py-1 rounded-full">{{
-          $t('home.project.seeDetails')
-        }}</span>
+        <BaseButton
+          class="-translate-y-1 group-hover:translate-y-0 transition-transform duration-300"
+          size="small"
+        >
+          {{ $t('home.project.seeDetails') }}
+        </BaseButton>
       </div>
     </div>
 
@@ -22,9 +25,10 @@
 </template>
 
 <script setup lang="ts">
-import Card from './Card.vue'
-import ProjectLinks from './ProjectLinks.vue'
-import type { Project } from '../../types'
+import Card from '@/components/molecules/Card.vue'
+import ProjectLinks from '@/components/molecules/ProjectLinks.vue'
+import type { Project } from '@/types'
+import BaseButton from '@/components/atoms/BaseButton.vue'
 
 defineProps<Project>()
 

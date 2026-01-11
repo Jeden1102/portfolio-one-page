@@ -20,8 +20,8 @@
 </template>
 
 <script setup lang="ts">
-import BaseBadge from '../atoms/BaseBadge.vue'
-import Card from './Card.vue'
+import BaseBadge from '@/components/atoms/BaseBadge.vue'
+import Card from '@/components/molecules/Card.vue'
 
 defineProps<{
   title: string

@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import AnimatedContent from '../bits/AnimatedContent/AnimatedContent.vue'
+import AnimatedContent from '@/components/bits/AnimatedContent/AnimatedContent.vue'
 
 defineProps<{
   isAnimated?: boolean

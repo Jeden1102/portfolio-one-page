@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import CountUp from '../bits/CountUp/CountUp.vue'
+import CountUp from '@/components/bits/CountUp/CountUp.vue'
 
 type StatItem = {
   prefix?: string

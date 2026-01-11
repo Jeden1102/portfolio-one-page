@@ -39,9 +39,9 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted } from 'vue'
-import BaseBadge from '../atoms/BaseBadge.vue'
-import ProjectLinks from './ProjectLinks.vue'
-import type { Project } from '../../types'
+import BaseBadge from '@/components/atoms/BaseBadge.vue'
+import ProjectLinks from '@/components/molecules/ProjectLinks.vue'
+import type { Project } from '@/types'
 
 defineProps<{
   isOpen: boolean
@@ -58,20 +58,11 @@ const closeOnEscape = (e: KeyboardEvent) => {
 
 onMounted(() => {
   document.addEventListener('keydown', (e) => closeOnEscape(e))
+  document.querySelector('html')!.style.overflow = 'hidden'
 })
 
 onUnmounted(() => {
   document.removeEventListener('keydown', (e) => closeOnEscape(e))
+  document.querySelector('html')!.style.overflow = 'unset'
 })
 </script>
-
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-</style>

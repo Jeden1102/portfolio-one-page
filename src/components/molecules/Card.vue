@@ -29,8 +29,8 @@
 </template>
 
 <script setup lang="ts">
-import DotGrid from '../bits/DotGrid/DotGrid.vue'
-import FloatingLines from '../bits/FloatingLines/FloatingLines.vue'
+import DotGrid from '@/components/bits/DotGrid/DotGrid.vue'
+import FloatingLines from '@/components/bits/FloatingLines/FloatingLines.vue'
 
 defineProps<{
   bg: 'lines' | 'grid'

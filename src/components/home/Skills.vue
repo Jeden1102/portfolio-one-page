@@ -29,10 +29,10 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import SectionTitle from '../atoms/SectionTitle.vue'
-import Skill from '../molecules/Skill.vue'
-import Tabs from '../molecules/Tabs.vue'
-import SectionDescription from '../atoms/SectionDescription.vue'
+import SectionTitle from '@/components/atoms/SectionTitle.vue'
+import Skill from '@/components/molecules/Skill.vue'
+import Tabs from '@/components/molecules/Tabs.vue'
+import SectionDescription from '@/components/atoms/SectionDescription.vue'
 
 const { t } = useI18n()
 

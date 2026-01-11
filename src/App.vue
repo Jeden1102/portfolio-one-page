@@ -19,9 +19,9 @@
 
 <script setup lang="ts">
 import AppAside from '@/components/app/AppAside.vue'
-import About from './components/home/About.vue'
-import AppCard from './components/app/AppCard.vue'
-import AppNav from './components/app/AppNav.vue'
-import Skills from './components/home/Skills.vue'
-import Projects from './components/home/Projects.vue'
+import About from '@/components/home/About.vue'
+import AppCard from '@/components/app/AppCard.vue'
+import AppNav from '@/components/app/AppNav.vue'
+import Skills from '@/components/home/Skills.vue'
+import Projects from '@/components/home/Projects.vue'
 </script>
