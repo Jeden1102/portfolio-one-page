@@ -68,7 +68,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'BitBucket',
       'Jenkins',
       'Docker',
-      'CI/CD'
+      'CI/CD',
     ],
     liveUrl: 'https://link4.pl/',
   },
@@ -87,7 +87,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Git',
       'BitBucket',
       'Docker',
-      'CI/CD'
+      'CI/CD',
     ],
     liveUrl: 'https://www.operator.enea.pl/',
   },
@@ -107,7 +107,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Git',
       'BitBucket',
       'Docker',
-      'CI/CD'
+      'CI/CD',
     ],
     liveUrl: 'https://www.mooveno.pl/',
   },
@@ -126,7 +126,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Git',
       'BitBucket',
       'Docker',
-      'CI/CD'
+      'CI/CD',
     ],
     liveUrl: 'https://hti-bp.pl/',
   },
@@ -146,7 +146,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Pinia',
       'Git',
       'GitLab',
-      'CI/CD'
+      'CI/CD',
     ],
   },
   {
@@ -165,7 +165,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Pinia',
       'Git',
       'GitLab',
-      'CI/CD'
+      'CI/CD',
     ],
   },
   {
@@ -184,7 +184,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Pinia',
       'Git',
       'GitLab',
-      'CI/CD'
+      'CI/CD',
     ],
   },
   /* Private */
@@ -206,7 +206,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'VPS',
       'Prisma',
       'CI/CD',
-      'Cleavr'
+      'Cleavr',
     ],
     liveUrl: 'https://eoecesuqvvttqp4l14844.cleavr.xyz/',
     gitUrl: 'https://github.com/Jeden1102/room-sharing',
@@ -230,6 +230,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
     ],
     liveUrl: 'https://www.aipplied.app/',
     gitUrl: 'https://github.com/Jeden1102/recruiter-ai',
+    slowLoad: true,
   },
   {
     title: 'Seat Hopper',
@@ -248,38 +249,27 @@ const projects: ComputedRef<Project[]> = computed(() => [
     ],
     liveUrl: 'https://ic-hopper.vercel.app/',
     gitUrl: 'https://github.com/Jeden1102/ic-hopper',
+    slowLoad: true,
   },
   {
     title: 'Drinks LP',
     category: 'private',
     image: '/projects/drinks.png',
     description: t('home.projects.drinks.description'),
-    technologies: [
-      'TypeScript',
-      'React',
-      'Vite',
-      'Tailwind',
-      'Git',
-      'Vercel',
-    ],
+    technologies: ['TypeScript', 'React', 'Vite', 'Tailwind', 'Git', 'Vercel'],
     liveUrl: 'https://drinks-lp.vercel.app/',
     gitUrl: 'https://github.com/Jeden1102/drinks_lp',
+    slowLoad: true,
   },
   {
     title: 'Candles LP',
     category: 'private',
     image: '/projects/candles.png',
     description: t('home.projects.candles.description'),
-    technologies: [
-      'TypeScript',
-      'Nuxt 3',
-      'Vite',
-      'SCSS',
-      'Git',
-      'Vercel',
-    ],
+    technologies: ['TypeScript', 'Nuxt 3', 'Vite', 'SCSS', 'Git', 'Vercel'],
     liveUrl: 'https://candles-ten.vercel.app/',
-    gitUrl: 'https://github.com/Jeden1102/Candles'
+    gitUrl: 'https://github.com/Jeden1102/Candles',
+    slowLoad: true,
   },
 ])
 

@@ -21,6 +21,13 @@
     </p>
 
     <ProjectLinks :gitUrl="gitUrl" :liveUrl="liveUrl" class="mt-auto" />
+    <span v-if="slowLoad" class="text-xs text-gray-300 mt-2">{{
+      $t('home.project.slowLoad')
+    }}</span>
+
+    <BaseButton size="small" class="w-fit mt-4 md:hidden">
+      {{ $t('home.project.seeDetails') }}
+    </BaseButton>
   </Card>
 </template>
 

@@ -233,7 +233,8 @@ watch(
 
 <template>
   <nav :class="containerClassName" :style="style" aria-label="Main navigation">
-    <div
+    <a
+      href="#start"
       :class="[
         'bubble logo-bubble',
         'inline-flex items-center justify-center',
@@ -267,7 +268,7 @@ watch(
           <component :is="logo" />
         </template>
       </span>
-    </div>
+    </a>
 
     <div class="flex items-center gap-4">
       <LanguageSwitcher

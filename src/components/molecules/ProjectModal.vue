@@ -22,7 +22,9 @@
             <h2 class="text-3xl font-bold text-white mb-2">{{ project.title }}</h2>
 
             <div class="flex flex-wrap gap-2 mb-4">
-              <BaseBadge v-for="tech in project.technologies" :key="tech" class="!my-0">{{ tech }}</BaseBadge>
+              <BaseBadge v-for="tech in project.technologies" :key="tech" class="!my-0">{{
+                tech
+              }}</BaseBadge>
             </div>
 
             <p class="text-gray-300 leading-relaxed whitespace-pre-wrap mb-4">
@@ -58,11 +60,11 @@ const closeOnEscape = (e: KeyboardEvent) => {
 
 onMounted(() => {
   document.addEventListener('keydown', (e) => closeOnEscape(e))
-  document.querySelector('html')!.style.overflow = 'hidden'
+  document.querySelector('html')!.style.overflowY = 'hidden'
 })
 
 onUnmounted(() => {
   document.removeEventListener('keydown', (e) => closeOnEscape(e))
-  document.querySelector('html')!.style.overflow = 'unset'
+  document.querySelector('html')!.style.overflowY = 'unset'
 })
 </script>

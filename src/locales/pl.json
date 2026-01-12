@@ -39,72 +39,74 @@
         "other": "Narzędzia"
       },
       "items": {
-        "vue": "Vue 3 (Composition API) / Vue 2 (Options API), Pinia, reactivity i optymalizacja komponentów.",
-        "nuxt": "Renderowanie hybrydowe (SSR/SSG), optymalizacja Core Web Vitals i zaawansowany routing.",
-        "typescript": "Budowanie aplikacji z wykorzystaniem TypeScript.",
-        "html": "Tworzenie wydajnych, semantycznych struktur DOM z naciskiem na dostępność i standardy W3C.",
-        "css": "Zaawansowany Responsive Design przy użyciu plain CSS oraz prepressorów typu SCSS.",
-        "tailwind": "Budowa szybkich interfejsów Utility-First oraz Custom Design Systems.",
-        "php": "Programowanie backendowe, integracja z bazami danych i obsługa API.",
-        "drupal": "Zarządzanie treścią, budowa modułów i headless CMS architecture.",
-        "api": "Integracje GraphQL, REST API oraz komunikacja WebSockets.",
-        "other_ui": "Znajomość bibliotek UI shadcn-vue, Nuxt UI, PrimeVue, Vuetify.",
-        "git": "Kontrola wersji git wraz z narzędziami GitHub, GitLab, Bitbucket.",
-        "jira": "Praca z ticketami, projektami i kanbanem. Współpraca w metodologii Scrum.",
-        "prisma": "Zarządzanie bazami danych i budowa bezpiecznych warstw dostępu do danych (ORM).",
-        "vite": "Szybki tooling, optymalizacja bundle'a i konfiguracja środowiska deweloperskiego.",
-        "docker": "Współpraca z Dockerem, zarządzanie kontami oraz skrypty do budowania obrazów Docker."
+        "vue": "Vue 3 (Composition API) / Vue 2, Pinia, reaktywność oraz tworzenie reużywalnych komponentów i composables.",
+        "nuxt": "Renderowanie hybrydowe (SSR/SSG), praca z Nuxt 3/4, optymalizacja pod Core Web Vitals i moduły Nuxt.",
+        "typescript": "Pisanie w pełni typowanego kodu, praca z interfejsami i zaawansowanymi typami w ekosystemie Vue.",
+        "html": "Semantyczny HTML5, dostępność (A11y) oraz dbałość o strukturę DOM pod kątem SEO.",
+        "css": "Zaawansowany Responsive Design, preprocesory (SCSS) oraz nowoczesny CSS (Grid, Flexbox).",
+        "tailwind": "Tworzenie złożonych interfejsów w oparciu o Utility-First CSS i customowe motywy.",
+        "gsap": "Tworzenie zaawansowanych animacji webowych i interaktywnych interfejsów przy użyciu biblioteki GSAP.",
+        "php": "Programowanie backendowe w PHP, wspieranie architektury CMS oraz budowa endpointów API.",
+        "drupal": "Doświadczenie w headless CMS, budowa modułów oraz integracja Drupala z nowoczesnym frontendem.",
+        "api": "Integracje z REST API i GraphQL. Praca z zewnętrznymi usługami takimi jak OpenAI (generatywna AI).",
+        "other_ui": "Biegłość w bibliotekach UI: shadcn-vue, Nuxt UI, PrimeVue, Vuetify.",
+        "git": "Zaawansowana kontrola wersji (Git) oraz współpraca w środowiskach GitHub, GitLab i Bitbucket.",
+        "jira": "Praca w metodologii Agile/Scrum, obsługa procesów Jenkins CI/CD oraz dokumentacja techniczna.",
+        "prisma": "Modelowanie baz danych i budowa warstw dostępu do danych (ORM) w projektach Node.js/Nuxt.",
+        "vite": "Optymalizacja bundle'a, konfiguracja środowisk deweloperskich i szybki tooling frontendowy.",
+        "docker": "Konteneryzacja aplikacji, praca w środowisku Dockerowym i automatyzacja wdrożeń."
       }
     },
     "projects": {
       "title": "Moje",
       "titleFeatured": "projekty",
-      "description": "Moje doświadczenie obejmuje zarówno zaawansowany frontend, jak i integracje z API czy systemami CMS. Szczegółowa lista moich umiejętności podzieloną na kategorie:",
+      "description": "Zestawienie wybranych projektów komercyjnych oraz prywatnych, w których odpowiadałem za architekturę, rozwój frontendu oraz integracje backendowe:",
       "categories": {
         "all": "Wszystkie",
         "commercial": "Komercyjne",
         "private": "Prywatne"
       },
-     "link4": {
-      "description": "Rozbudowany portal ubezpieczeniowy dla jednego z liderów branży w Polsce. Jako deweloper fullstack (z naciskiem na frontend) odpowiadałem za implementację customowych modułów Vue 3 oraz integrację warstwy prezentacji z silnikiem Drupala w środowisku Dockerowym."
-    },
-    "enea": {
-      "description": "Oficjalny serwis informacyjny i obsługowy dla Enea Operator. Zajmowałem się rozwojem platformy w modelu fullstackowym, tworząc wydajne komponenty Vue 3 i Tailwind, dbając o ich pełną responsywność oraz zgodność ze standardami korporacyjnymi."
-    },
-    "mooveno": {
-      "description": "Nowoczesna platforma mobilnościowa oferująca usługi typu car-sharing i zarządzanie flotą. Odpowiadałem za warstwę frontendową aplikacji, w tym implementację zaawansowanych animacji GSAP oraz autorskich rozwiązań interaktywnych zintegrowanych z backendem CMS."
-    },
-    "hti": {
-      "description": "Specjalistyczny portal branżowy dla grupy HTI, wspierający procesy logistyczne i sprzedażowe. Realizowałem zadania fullstackowe, budując elastyczne interfejsy w Vue 3 i Vite, które znacząco poprawiły doświadczenie użytkownika końcowego."
-    },
-    "cards": {
-      "description": "Autorski, wielozadaniowy panel zarządzania z zaawansowanym systemem autoryzacji i uprawnień. Byłem odpowiedzialny za projekt od fazy koncepcyjnej i konsultacji z klientem, aż po pełne wdrożenie produkcyjne gotowego produktu."
-    },
-    "iot": {
-      "description": "Zaawansowany pulpit nawigacyjny (Dashboard) do monitorowania i wizualizacji danych z urządzeń IoT w czasie rzeczywistym. Samodzielnie dostarczyłem rozwiązanie od A do Z, dbając o bezpieczeństwo danych, stabilność sesji i intuicyjną prezentację wykresów."
-    },
-    "homestay": {
-      "description": "Komercyjna platforma rezerwacyjna dla luksusowych apartamentów. Zaprojektowałem i wdrożyłem kompletny system obejmujący interaktywny kalendarz dostępności, moduł bookowania terminów oraz zintegrowane formularze kontaktowe."
-    },
-    "rooms": {
-      "description": "Kompleksowa platforma typu marketplace dla rynku nieruchomości, będąca moim najbardziej rozbudowanym projektem prywatnym. System obsługuje pełny cykl życia ogłoszenia: od zaawansowanych paneli użytkownika i logowania, po automatyczne powiadomienia mailowe i integrację z bazą danych Prisma."
-    },
-    "aipplied": {
-      "description": "Innowacyjne narzędzie wspierające procesy HR poprzez wykorzystanie sztucznej inteligencji. Zaimplementowałem pełną architekturę aplikacji wraz z integracją OpenAI API, która automatycznie generuje spersonalizowane pytania rekrutacyjne na podstawie przesłanych danych."
-    },
-    "seats": {
-      "description": "Inteligentna wyszukiwarka biletów PKP Intercity, rozwiązująca problem braku wolnych miejsc na długich trasach. Aplikacja wykorzystuje sprytny algorytm dzielenia trasy na etapy i integruje się z zewnętrznymi danymi, aby znaleźć dostępne kombinacje siedzeń."
-    },
-    "drinks": {
-      "description": "Dynamiczny Landing Page dla marki z branży napojów, zaprojektowany z naciskiem na nowoczesny design i konwersję. Projekt cechuje się wysoką wydajnością, dopracowaną typografią i płynnymi przejściami między sekcjami."
-    },
-    "candles": {
-      "description": "Stylowa strona produktowa dla manufaktury świec, łącząca estetykę rzemieślniczą z nowoczesnymi standardami Web Performance. Skupiłem się na optymalizacji warstwy wizualnej (SCSS) oraz szybkim czasie ładowania strony."
-    }
+      "link4": {
+        "description": "Rozbudowany portal ubezpieczeniowy dla jednego z liderów branży w Polsce. Jako deweloper fullstack (z naciskiem na frontend) odpowiadałem za implementację customowych modułów Vue 3 oraz integrację warstwy prezentacji z silnikiem Drupala w środowisku Dockerowym."
+      },
+      "enea": {
+        "description": "Oficjalny serwis informacyjny i obsługowy dla Enea Operator. Zajmowałem się rozwojem platformy w modelu fullstackowym, tworząc wydajne komponenty Vue 3 i Tailwind, dbając o ich pełną responsywność oraz zgodność ze standardami korporacyjnymi."
+      },
+      "mooveno": {
+        "description": "Nowoczesna platforma mobilnościowa oferująca usługi typu car-sharing i zarządzanie flotą. Odpowiadałem za warstwę frontendową aplikacji, w tym implementację zaawansowanych animacji GSAP oraz autorskich rozwiązań interaktywnych zintegrowanych z backendem CMS."
+      },
+      "hti": {
+        "description": "Specjalistyczny portal branżowy dla grupy HTI, wspierający procesy logistyczne i sprzedażowe. Realizowałem zadania fullstackowe, budując elastyczne interfejsy w Vue 3 i Vite, które znacząco poprawiły doświadczenie użytkownika końcowego."
+      },
+      "cards": {
+        "description": "Autorski, wielozadaniowy panel zarządzania z zaawansowanym systemem autoryzacji i uprawnień. Byłem odpowiedzialny za projekt od fazy koncepcyjnej i konsultacji z klientem, aż po pełne wdrożenie produkcyjne gotowego produktu."
+      },
+      "iot": {
+        "description": "Zaawansowany pulpit nawigacyjny (Dashboard) do monitorowania i wizualizacji danych z urządzeń IoT w czasie rzeczywistym. Samodzielnie dostarczyłem rozwiązanie od A do Z, dbając o bezpieczeństwo danych, stabilność sesji i intuicyjną prezentację wykresów."
+      },
+      "homestay": {
+        "description": "Komercyjna platforma rezerwacyjna dla luksusowych apartamentów. Zaprojektowałem i wdrożyłem kompletny system obejmujący interaktywny kalendarz dostępności, moduł bookowania terminów oraz zintegrowane formularze kontaktowe."
+      },
+      "rooms": {
+        "description": "Kompleksowa platforma typu marketplace dla rynku nieruchomości, będąca moim najbardziej rozbudowanym projektem prywatnym. System obsługuje pełny cykl życia ogłoszenia: od zaawansowanych paneli użytkownika i logowania, po automatyczne powiadomienia mailowe i integrację z bazą danych Prisma."
+      },
+      "aipplied": {
+        "description": "Innowacyjne narzędzie wspierające procesy HR poprzez wykorzystanie sztucznej inteligencji. Zaimplementowałem pełną architekturę aplikacji wraz z integracją OpenAI API, która automatycznie generuje spersonalizowane pytania rekrutacyjne na podstawie przesłanych danych."
+      },
+      "seats": {
+        "description": "Inteligentna wyszukiwarka biletów PKP Intercity, rozwiązująca problem braku wolnych miejsc na długich trasach. Aplikacja wykorzystuje sprytny algorytm dzielenia trasy na etapy i integruje się z zewnętrznymi danymi, aby znaleźć dostępne kombinacje siedzeń."
+      },
+      "drinks": {
+        "description": "Dynamiczny Landing Page dla marki z branży napojów, zaprojektowany z naciskiem na nowoczesny design i konwersję. Projekt cechuje się wysoką wydajnością, dopracowaną typografią i płynnymi przejściami między sekcjami."
+      },
+      "candles": {
+        "description": "Stylowa strona produktowa dla manufaktury świec, łącząca estetykę rzemieślniczą z nowoczesnymi standardami Web Performance. Skupiłem się na optymalizacji warstwy wizualnej (SCSS) oraz szybkim czasie ładowania strony."
+      }
     },
     "project": {
-      "seeDetails": "Zobacz szczegóły",
-      "live": "Zobacz live"
+      "seeDetails": "Szczegóły",
+      "live": "Zobacz live",
+      "slowLoad": "Załadowanie strony może potrwać kilka sekund, ponieważ jest ona hostowana darmowym planie Vercel."
     }
   }
 }

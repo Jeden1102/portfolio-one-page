@@ -95,7 +95,13 @@ const skills = computed(() => [
     icon: 'pi-objects-column',
     description: t('home.skills.items.other_ui'),
   },
-
+  {
+    title: 'GSAP',
+    category: 'Frontend',
+    categoryLabel: t('home.skills.categories.frontend'),
+    icon: 'pi-objects-column',
+    description: t('home.skills.items.gsap'),
+  },
   {
     title: 'PHP',
     category: 'Backend',

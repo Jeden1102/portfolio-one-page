@@ -6,4 +6,5 @@ export type Project = {
   category: string
   gitUrl?: string
   liveUrl?: string
+  slowLoad?: boolean
 }
