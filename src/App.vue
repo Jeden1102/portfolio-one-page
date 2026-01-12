@@ -11,6 +11,7 @@
           <About />
           <Skills />
           <Projects />
+          <Contact />
         </AppCard>
       </main>
     </div>
@@ -24,4 +25,5 @@ import AppCard from '@/components/app/AppCard.vue'
 import AppNav from '@/components/app/AppNav.vue'
 import Skills from '@/components/home/Skills.vue'
 import Projects from '@/components/home/Projects.vue'
+import Contact from '@/components/home/Contact.vue'
 </script>

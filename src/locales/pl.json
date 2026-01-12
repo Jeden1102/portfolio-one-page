@@ -107,6 +107,21 @@
       "seeDetails": "Szczegóły",
       "live": "Zobacz live",
       "slowLoad": "Załadowanie strony może potrwać kilka sekund, ponieważ jest ona hostowana darmowym planie Vercel."
+    },
+    "contact": {
+      "title": "Skontaktuj się",
+      "titleFeatured": "ze mną",
+      "description": "Masz pytania, sugestie, propozycje, czy chcesz współpracować? Skontaktuj się ze mną!",
+      "labels": {
+        "name": "Imię",
+        "email": "Email",
+        "message": "Wiadomość"
+      },
+      "placeholders": {
+        "message": "W czym mogę Ci pomóc?"
+      },
+      "submit": "Wyślij wiadomość",
+      "sending": "Wysyłanie wiadomości..."
     }
   }
 }
