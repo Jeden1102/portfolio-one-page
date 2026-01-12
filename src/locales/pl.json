@@ -65,24 +65,42 @@
         "commercial": "Komercyjne",
         "private": "Prywatne"
       },
-      "link4": {
-        "description": "Zaawansowany projekt w oparciu o Drupal."
-      },
-      "enea": {
-        "description": "Zaawansowany projekt w oparciu o Drupal."
-      },
-      "mooveno": {
-        "description": "Zaawansowany projekt w oparciu o Drupal."
-      },
-      "hti": {
-        "description": "Zaawansowany projekt w oparciu o Drupal."
-      },
-      "cards": {
-        "description": "Zaawansowany projekt w oparciu o Drupal."
-      },
-      "iot": {
-        "description": "Zaawansowany projekt w oparciu o Drupal."
-      }
+     "link4": {
+      "description": "Rozbudowany portal ubezpieczeniowy dla jednego z liderów branży w Polsce. Jako deweloper fullstack (z naciskiem na frontend) odpowiadałem za implementację customowych modułów Vue 3 oraz integrację warstwy prezentacji z silnikiem Drupala w środowisku Dockerowym."
+    },
+    "enea": {
+      "description": "Oficjalny serwis informacyjny i obsługowy dla Enea Operator. Zajmowałem się rozwojem platformy w modelu fullstackowym, tworząc wydajne komponenty Vue 3 i Tailwind, dbając o ich pełną responsywność oraz zgodność ze standardami korporacyjnymi."
+    },
+    "mooveno": {
+      "description": "Nowoczesna platforma mobilnościowa oferująca usługi typu car-sharing i zarządzanie flotą. Odpowiadałem za warstwę frontendową aplikacji, w tym implementację zaawansowanych animacji GSAP oraz autorskich rozwiązań interaktywnych zintegrowanych z backendem CMS."
+    },
+    "hti": {
+      "description": "Specjalistyczny portal branżowy dla grupy HTI, wspierający procesy logistyczne i sprzedażowe. Realizowałem zadania fullstackowe, budując elastyczne interfejsy w Vue 3 i Vite, które znacząco poprawiły doświadczenie użytkownika końcowego."
+    },
+    "cards": {
+      "description": "Autorski, wielozadaniowy panel zarządzania z zaawansowanym systemem autoryzacji i uprawnień. Byłem odpowiedzialny za projekt od fazy koncepcyjnej i konsultacji z klientem, aż po pełne wdrożenie produkcyjne gotowego produktu."
+    },
+    "iot": {
+      "description": "Zaawansowany pulpit nawigacyjny (Dashboard) do monitorowania i wizualizacji danych z urządzeń IoT w czasie rzeczywistym. Samodzielnie dostarczyłem rozwiązanie od A do Z, dbając o bezpieczeństwo danych, stabilność sesji i intuicyjną prezentację wykresów."
+    },
+    "homestay": {
+      "description": "Komercyjna platforma rezerwacyjna dla luksusowych apartamentów. Zaprojektowałem i wdrożyłem kompletny system obejmujący interaktywny kalendarz dostępności, moduł bookowania terminów oraz zintegrowane formularze kontaktowe."
+    },
+    "rooms": {
+      "description": "Kompleksowa platforma typu marketplace dla rynku nieruchomości, będąca moim najbardziej rozbudowanym projektem prywatnym. System obsługuje pełny cykl życia ogłoszenia: od zaawansowanych paneli użytkownika i logowania, po automatyczne powiadomienia mailowe i integrację z bazą danych Prisma."
+    },
+    "aipplied": {
+      "description": "Innowacyjne narzędzie wspierające procesy HR poprzez wykorzystanie sztucznej inteligencji. Zaimplementowałem pełną architekturę aplikacji wraz z integracją OpenAI API, która automatycznie generuje spersonalizowane pytania rekrutacyjne na podstawie przesłanych danych."
+    },
+    "seats": {
+      "description": "Inteligentna wyszukiwarka biletów PKP Intercity, rozwiązująca problem braku wolnych miejsc na długich trasach. Aplikacja wykorzystuje sprytny algorytm dzielenia trasy na etapy i integruje się z zewnętrznymi danymi, aby znaleźć dostępne kombinacje siedzeń."
+    },
+    "drinks": {
+      "description": "Dynamiczny Landing Page dla marki z branży napojów, zaprojektowany z naciskiem na nowoczesny design i konwersję. Projekt cechuje się wysoką wydajnością, dopracowaną typografią i płynnymi przejściami między sekcjami."
+    },
+    "candles": {
+      "description": "Stylowa strona produktowa dla manufaktury świec, łącząca estetykę rzemieślniczą z nowoczesnymi standardami Web Performance. Skupiłem się na optymalizacji warstwy wizualnej (SCSS) oraz szybkim czasie ładowania strony."
+    }
     },
     "project": {
       "seeDetails": "Zobacz szczegóły",

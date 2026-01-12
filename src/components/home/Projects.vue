@@ -68,6 +68,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'BitBucket',
       'Jenkins',
       'Docker',
+      'CI/CD'
     ],
     liveUrl: 'https://link4.pl/',
   },
@@ -86,6 +87,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Git',
       'BitBucket',
       'Docker',
+      'CI/CD'
     ],
     liveUrl: 'https://www.operator.enea.pl/',
   },
@@ -105,6 +107,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Git',
       'BitBucket',
       'Docker',
+      'CI/CD'
     ],
     liveUrl: 'https://www.mooveno.pl/',
   },
@@ -123,6 +126,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Git',
       'BitBucket',
       'Docker',
+      'CI/CD'
     ],
     liveUrl: 'https://hti-bp.pl/',
   },
@@ -142,6 +146,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Pinia',
       'Git',
       'GitLab',
+      'CI/CD'
     ],
   },
   {
@@ -160,13 +165,14 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Pinia',
       'Git',
       'GitLab',
+      'CI/CD'
     ],
   },
   {
     title: 'Homestay page',
     category: 'commercial',
     image: '/projects/homestay.png',
-    description: t('home.projects.iot.description'),
+    description: t('home.projects.homestay.description'),
     technologies: [
       'TypeScript',
       'Vue 3',
@@ -178,6 +184,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Pinia',
       'Git',
       'GitLab',
+      'CI/CD'
     ],
   },
   /* Private */
@@ -198,14 +205,17 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Vercel',
       'VPS',
       'Prisma',
+      'CI/CD',
+      'Cleavr'
     ],
     liveUrl: 'https://eoecesuqvvttqp4l14844.cleavr.xyz/',
+    gitUrl: 'https://github.com/Jeden1102/room-sharing',
   },
   {
     title: 'Aipplied',
     category: 'private',
     image: '/projects/aipplied.png',
-    description: t('home.projects.rooms.description'),
+    description: t('home.projects.aipplied.description'),
     technologies: [
       'TypeScript',
       'Nuxt 3',
@@ -219,12 +229,13 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Prisma',
     ],
     liveUrl: 'https://www.aipplied.app/',
+    gitUrl: 'https://github.com/Jeden1102/recruiter-ai',
   },
   {
     title: 'Seat Hopper',
     category: 'private',
     image: '/projects/ic-hopper.png',
-    description: t('home.projects.rooms.description'),
+    description: t('home.projects.seats.description'),
     technologies: [
       'TypeScript',
       'Nuxt 3',
@@ -236,40 +247,39 @@ const projects: ComputedRef<Project[]> = computed(() => [
       'Vercel',
     ],
     liveUrl: 'https://ic-hopper.vercel.app/',
+    gitUrl: 'https://github.com/Jeden1102/ic-hopper',
   },
   {
     title: 'Drinks LP',
     category: 'private',
     image: '/projects/drinks.png',
-    description: t('home.projects.rooms.description'),
+    description: t('home.projects.drinks.description'),
     technologies: [
       'TypeScript',
-      'Nuxt 3',
-      'PrimeVue',
+      'React',
       'Vite',
       'Tailwind',
-      'Pinia',
       'Git',
       'Vercel',
     ],
     liveUrl: 'https://drinks-lp.vercel.app/',
+    gitUrl: 'https://github.com/Jeden1102/drinks_lp',
   },
   {
     title: 'Candles LP',
     category: 'private',
     image: '/projects/candles.png',
-    description: t('home.projects.rooms.description'),
+    description: t('home.projects.candles.description'),
     technologies: [
       'TypeScript',
       'Nuxt 3',
-      'PrimeVue',
       'Vite',
-      'Tailwind',
-      'Pinia',
+      'SCSS',
       'Git',
       'Vercel',
     ],
     liveUrl: 'https://candles-ten.vercel.app/',
+    gitUrl: 'https://github.com/Jeden1102/Candles'
   },
 ])
 

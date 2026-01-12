@@ -22,7 +22,7 @@
             <h2 class="text-3xl font-bold text-white mb-2">{{ project.title }}</h2>
 
             <div class="flex flex-wrap gap-2 mb-4">
-              <BaseBadge v-for="tech in project.technologies" :key="tech">{{ tech }}</BaseBadge>
+              <BaseBadge v-for="tech in project.technologies" :key="tech" class="!my-0">{{ tech }}</BaseBadge>
             </div>
 
             <p class="text-gray-300 leading-relaxed whitespace-pre-wrap mb-4">
