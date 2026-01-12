@@ -4,7 +4,7 @@
       <div
         class="grid place-content-center size-10 rounded-lg bg-primary-500/10 text-primary-500 border border-primary-500/20"
       >
-        <i :class="['pi', icon, 'text-xl']"></i>
+        <Icon :icon class="text-xl" />
       </div>
       <h3 class="font-semibold text-xl text-white">
         {{ title }}
@@ -22,7 +22,7 @@
 <script setup lang="ts">
 import BaseBadge from '@/components/atoms/BaseBadge.vue'
 import Card from '@/components/molecules/Card.vue'
-
+import { Icon } from '@iconify/vue'
 defineProps<{
   title: string
   category: string
