@@ -121,7 +121,13 @@
         "message": "W czym mogę Ci pomóc?"
       },
       "submit": "Wyślij wiadomość",
-      "sending": "Wysyłanie wiadomości..."
+      "sending": "Wysyłanie wiadomości...",
+      "success": "Wiadomość została wysłana",
+      "errors": {
+        "emailRequired": "Adres email jest wymagany",
+        "emailInvalid": "Podany adres email jest nieprawidłowy",
+        "messageTooShort": "Wiadomość jest za krotka"
+      }
     }
   }
 }
