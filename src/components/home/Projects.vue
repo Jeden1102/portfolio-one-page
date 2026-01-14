@@ -42,7 +42,6 @@ import type { Project } from '@/types'
 
 const { t } = useI18n()
 
-const activeCategory = ref('all')
 const selectedProject = ref<null | Project>(null)
 
 const categories = computed(() => [
@@ -51,11 +50,13 @@ const categories = computed(() => [
   { label: t('home.projects.categories.private'), value: 'private' },
 ])
 
+const activeCategory = ref(categories.value[0]?.value)
+
 const projects: ComputedRef<Project[]> = computed(() => [
   {
     title: 'Link4',
     category: 'commercial',
-    image: '/projects/link4.png',
+    image: '/projects/link4.webp',
     description: t('home.projects.link4.description'),
     technologies: [
       'Drupal',
@@ -75,7 +76,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
   {
     title: 'Enea Operator',
     category: 'commercial',
-    image: '/projects/operator.png',
+    image: '/projects/operator.webp',
     description: t('home.projects.enea.description'),
     technologies: [
       'Drupal',
@@ -94,7 +95,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
   {
     title: 'Mooveno',
     category: 'commercial',
-    image: '/projects/mooveno.png',
+    image: '/projects/mooveno.webp',
     description: t('home.projects.mooveno.description'),
     technologies: [
       'Drupal',
@@ -114,7 +115,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
   {
     title: 'HTI',
     category: 'commercial',
-    image: '/projects/hti.png',
+    image: '/projects/hti.webp',
     description: t('home.projects.hti.description'),
     technologies: [
       'Drupal',
@@ -133,7 +134,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
   {
     title: 'Cards',
     category: 'commercial',
-    image: '/projects/cards.png',
+    image: '/projects/cards.webp',
     description: t('home.projects.cards.description'),
     technologies: [
       'TypeScript',
@@ -152,7 +153,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
   {
     title: 'IoT Dashboard',
     category: 'commercial',
-    image: '/projects/iot.png',
+    image: '/projects/iot.webp',
     description: t('home.projects.iot.description'),
     technologies: [
       'TypeScript',
@@ -171,7 +172,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
   {
     title: 'Homestay page',
     category: 'commercial',
-    image: '/projects/homestay.png',
+    image: '/projects/homestay.webp',
     description: t('home.projects.homestay.description'),
     technologies: [
       'TypeScript',
@@ -191,7 +192,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
   {
     title: 'Pokój z Wami',
     category: 'private',
-    image: '/projects/rooms.png',
+    image: '/projects/rooms.webp',
     description: t('home.projects.rooms.description'),
     technologies: [
       'TypeScript',
@@ -214,7 +215,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
   {
     title: 'Aipplied',
     category: 'private',
-    image: '/projects/aipplied.png',
+    image: '/projects/aipplied.webp',
     description: t('home.projects.aipplied.description'),
     technologies: [
       'TypeScript',
@@ -235,7 +236,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
   {
     title: 'Seat Hopper',
     category: 'private',
-    image: '/projects/ic-hopper.png',
+    image: '/projects/ic-hopper.webp',
     description: t('home.projects.seats.description'),
     technologies: [
       'TypeScript',
@@ -254,7 +255,7 @@ const projects: ComputedRef<Project[]> = computed(() => [
   {
     title: 'Drinks LP',
     category: 'private',
-    image: '/projects/drinks.png',
+    image: '/projects/drinks.webp',
     description: t('home.projects.drinks.description'),
     technologies: ['TypeScript', 'React', 'Vite', 'Tailwind', 'Git', 'Vercel'],
     liveUrl: 'https://drinks-lp.vercel.app/',
@@ -264,9 +265,9 @@ const projects: ComputedRef<Project[]> = computed(() => [
   {
     title: 'Candles LP',
     category: 'private',
-    image: '/projects/candles.png',
+    image: '/projects/candles.webp',
     description: t('home.projects.candles.description'),
-    technologies: ['TypeScript', 'Nuxt 3', 'Vite', 'SCSS', 'Git', 'Vercel'],
+    technologies: ['TypeScript', 'Nuxt 3', 'Vite', 'Tailwind', 'Git', 'Vercel'],
     liveUrl: 'https://candles-ten.vercel.app/',
     gitUrl: 'https://github.com/Jeden1102/Candles',
     slowLoad: true,

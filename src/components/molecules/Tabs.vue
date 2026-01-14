@@ -4,7 +4,7 @@
       v-for="tab in items"
       :key="tab.value"
       @click="handleClick(tab.value)"
-      :class="[modelValue === tab.value && '!bg-primary-500']"
+      :class="[modelValue === tab.value && '!bg-[#2d855d]']"
       size="small"
     >
       {{ tab.label }}

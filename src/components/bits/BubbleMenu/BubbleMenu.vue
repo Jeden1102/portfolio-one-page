@@ -245,7 +245,7 @@ watch(
         'h-12 md:h-14',
         'px-4 md:px-8',
         'gap-2',
-        'will-change-transform',
+        'will-change-transform lg:opacity-0 lg:pointer-events-none',
       ]"
       aria-label="Logo"
       :style="{

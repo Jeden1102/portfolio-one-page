@@ -34,7 +34,7 @@ const numbers = computed(() => [
     prefix: '+',
     label: t('home.about.stats.projects'),
     from: 0,
-    to: 30,
+    to: 20,
   },
 ])
 </script>

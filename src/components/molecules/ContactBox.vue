@@ -4,7 +4,7 @@
       <i :class="icon"></i>
     </span>
     <div>
-      <h3 class="font-semibold uppercase">{{ title }}</h3>
+      <p class="font-semibold uppercase">{{ title }}</p>
       <span class="font-light text-gray-600 text-sm">
         <a v-if="uri" :href="uri" class="hover:underline">{{ value }}</a>
         <p v-else>{{ value }}</p>

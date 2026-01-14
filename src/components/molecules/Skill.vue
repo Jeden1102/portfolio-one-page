@@ -23,6 +23,7 @@
 import BaseBadge from '@/components/atoms/BaseBadge.vue'
 import Card from '@/components/molecules/Card.vue'
 import { Icon } from '@iconify/vue'
+
 defineProps<{
   title: string
   category: string

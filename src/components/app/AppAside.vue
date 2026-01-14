@@ -1,6 +1,6 @@
 <template>
   <aside>
-    <AppCard class="flex flex-col gap-4 lg:w-90 lg:min-w-90" isAnimated>
+    <AppCard class="flex flex-col gap-4 lg:w-90 lg:min-w-90 lg:sticky top-8" isAnimated>
       <div class="flex gap-6 w-fit items-center">
         <div class="bg-primary-500/60 rounded-lg p-2">
           <Vue3Lottie :animationData="Developer" :height="64" :width="64" :speed="0.5" />
@@ -34,7 +34,7 @@
         />
       </div>
 
-      <BaseButton to="/Dominik-Raducki-CV.pdf" variant="primary" class="mt-2" download>
+      <BaseButton :to="CVUri" variant="primary" class="mt-2" download>
         {{ $t('aside.downloadCv') }}
       </BaseButton>
     </AppCard>
@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Vue3Lottie } from 'vue3-lottie'
 
@@ -53,7 +53,11 @@ import Developer from '@/assets/developer.json'
 import BaseButton from '@/components/atoms/BaseButton.vue'
 import BaseBadge from '@/components/atoms/BaseBadge.vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
+
+const CVUri = computed(() => {
+  return `/Dominik-Raducki-Frontend-Developer-${locale.value}.pdf`
+})
 
 const contactForms = computed(() => [
   {

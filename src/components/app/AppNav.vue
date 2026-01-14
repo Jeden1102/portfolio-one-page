@@ -2,7 +2,7 @@
   <BubbleMenu
     :logo="h(AppLogo)"
     :items="navItems"
-    className="lg:max-w-[calc(100%-360px)] lg:left-auto lg:w-full"
+    className="lg:max-w-350 lg:mx-auto lg:top-12"
     useFixedPosition
   />
 </template>

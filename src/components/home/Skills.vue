@@ -43,7 +43,7 @@ const categories = computed(() => [
   { label: t('home.skills.categories.other'), value: 'Inne' },
 ])
 
-const activeCategory = ref('all')
+const activeCategory = ref(categories.value[0]?.value)
 
 const skills = computed(() => [
   {
@@ -92,7 +92,7 @@ const skills = computed(() => [
     title: 'UI Libraries',
     category: 'Frontend',
     categoryLabel: t('home.skills.categories.frontend'),
-    icon: 'logos:webcomponents', // Uniwersalna ikona dla bibliotek UI
+    icon: 'logos:webcomponents',
     description: t('home.skills.items.other_ui'),
   },
   {

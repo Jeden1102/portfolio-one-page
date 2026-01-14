@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Dominik Raducki - Frontend Developer",
+    "description": "Programista z 3,5-letnim doświadczeniem specjalizujący się w Vue, Nuxt oraz Drupalu. Zobacz moje projekty komercyjne i listę umiejętności."
+  },
   "aside": {
     "specialization": "Specjalista w zakresie technologii <b>Vue, Nuxt oraz Drupal</b>",
     "downloadCv": "Pobierz CV",
@@ -6,7 +10,7 @@
       "phone": "Telefon",
       "email": "Email",
       "birthday": "Data urodzenia",
-      "birthdayValue": "28 Stycznia 2002",
+      "birthdayValue": "28 stycznia 2002",
       "location": "Lokalizacja",
       "locationValue": "Warszawa / Remote"
     }
@@ -22,7 +26,7 @@
     "about": {
       "title": "Frontend",
       "titleFeatured": "Developer",
-      "description": "Programista z 3,5-letnim doświadczeniem, swobodnie poruszający się między architekturą Vue 2 a nowoczesnym Composition API w Vue 3. Specjalizuję się w ekosystemie Nuxt (od wersji 3 oraz 4). Mam otwartą głowę na nowe rozwiązania i stale rozwijam swój stack o technologie, które realnie poprawiają jakość interfejsów i komfort pracy deweloperskiej.",
+      "description": "Hej! Jestem programistą z ponad 3,5-letnim doświadczeniem w budowaniu skalowalnych aplikacji webowych. Choć moją bazą jest ekosystem Vue i Nuxt (3/4), w swojej pracy łączę nowoczesny frontend z solidnym zapleczem backendowym (PHP, Node.js) oraz systemami CMS (Headless Drupal). Od zaawansowanych paneli IoT i systemów ubezpieczeniowych, aż po narzędzia wspierane przez AI – skupiam się na dostarczaniu rozwiązań, które są wydajne, w pełni typowane i zoptymalizowane pod kątem UX.",
       "stats": {
         "experience": "Lata doświadczenia",
         "projects": "Zrealizowane projekty"
@@ -31,7 +35,7 @@
     "skills": {
       "title": "Moje",
       "titleFeatured": "umiejętności",
-      "description": "Moje doświadczenie obejmuje zarówno zaawansowany frontend, jak i integracje z API czy systemami CMS. Szczegółowa lista moich umiejętności podzieloną na kategorie:",
+      "description": "Moje doświadczenie obejmuje budowę zaawansowanych interfejsów, integracje z API oraz systemami klasy Enterprise. Oto technologie, w których czuję się najlepiej:",
       "categories": {
         "all": "Wszystkie",
         "frontend": "Frontend",
@@ -39,28 +43,28 @@
         "other": "Narzędzia"
       },
       "items": {
-        "vue": "Vue 3 (Composition API) / Vue 2, Pinia, reaktywność oraz tworzenie reużywalnych komponentów i composables.",
-        "nuxt": "Renderowanie hybrydowe (SSR/SSG), praca z Nuxt 3/4, optymalizacja pod Core Web Vitals i moduły Nuxt.",
-        "typescript": "Pisanie w pełni typowanego kodu, praca z interfejsami i zaawansowanymi typami w ekosystemie Vue.",
-        "html": "Semantyczny HTML5, dostępność (A11y) oraz dbałość o strukturę DOM pod kątem SEO.",
-        "css": "Zaawansowany Responsive Design, preprocesory (SCSS) oraz nowoczesny CSS (Grid, Flexbox).",
-        "tailwind": "Tworzenie złożonych interfejsów w oparciu o Utility-First CSS i customowe motywy.",
-        "gsap": "Tworzenie zaawansowanych animacji webowych i interaktywnych interfejsów przy użyciu biblioteki GSAP.",
-        "php": "Programowanie backendowe w PHP, wspieranie architektury CMS oraz budowa endpointów API.",
-        "drupal": "Doświadczenie w headless CMS, budowa modułów oraz integracja Drupala z nowoczesnym frontendem.",
-        "api": "Integracje z REST API i GraphQL. Praca z zewnętrznymi usługami takimi jak OpenAI (generatywna AI).",
-        "other_ui": "Biegłość w bibliotekach UI: shadcn-vue, Nuxt UI, PrimeVue, Vuetify.",
-        "git": "Zaawansowana kontrola wersji (Git) oraz współpraca w środowiskach GitHub, GitLab i Bitbucket.",
-        "jira": "Praca w metodologii Agile/Scrum, obsługa procesów Jenkins CI/CD oraz dokumentacja techniczna.",
-        "prisma": "Modelowanie baz danych i budowa warstw dostępu do danych (ORM) w projektach Node.js/Nuxt.",
-        "vite": "Optymalizacja bundle'a, konfiguracja środowisk deweloperskich i szybki tooling frontendowy.",
-        "docker": "Konteneryzacja aplikacji, praca w środowisku Dockerowym i automatyzacja wdrożeń."
+        "vue": "Vue 3 (Composition API) / Vue 2 (Options API) – budowa reużywalnych architektur i zaawansowanych composables.",
+        "nuxt": "Nuxt 3/4 – renderowanie hybrydowe (SSR/SSG), optymalizacja Core Web Vitals i moduły ekosystemu.",
+        "typescript": "TypeScript – tworzenie w pełni typowanego, bezpiecznego kodu w złożonych projektach frontendowych.",
+        "html": "Semantyczny HTML5 & A11y – dbałość o dostępność i strukturę dokumentu pod kątem SEO.",
+        "css": "Modern CSS – zaawansowany Responsive Design z wykorzystaniem Grid, Flexbox i preprocesora SCSS.",
+        "tailwind": "Tailwind CSS – projektowanie spójnych systemów wizualnych w oparciu o Utility-First CSS.",
+        "gsap": "GSAP – tworzenie płynnych animacji webowych i interaktywnych elementów interfejsu.",
+        "php": "PHP – wsparcie architektury backendowej, budowa endpointów API i logika serwerowa.",
+        "drupal": "Drupal – integracja CMS klasy Enterprise z nowoczesnym frontendem i budowa modułów.",
+        "api": "API & AI – integracje REST/GraphQL oraz wdrażanie rozwiązań generatywnej inteligencji (OpenAI).",
+        "other_ui": "UI Frameworks – biegłość w pracy z shadcn-vue, Nuxt UI, PrimeVue oraz Vuetify.",
+        "git": "Git – kontrola wersji i praca w środowiskach GitHub, GitLab oraz Bitbucket.",
+        "jira": "Agile & CI/CD – praca w Scrumie, obsługa Jenkinsa oraz tworzenie dokumentacji technicznej.",
+        "prisma": "Prisma ORM – modelowanie baz danych i zarządzanie warstwą danych w projektach Node.js.",
+        "vite": "Vite – optymalizacja procesu budowania (bundle) i konfiguracja środowisk deweloperskich.",
+        "docker": "Docker – konteneryzacja aplikacji i praca w ujednoliconych środowiskach wdrożeniowych."
       }
     },
     "projects": {
-      "title": "Moje",
+      "title": "Wybrane",
       "titleFeatured": "projekty",
-      "description": "Zestawienie wybranych projektów komercyjnych oraz prywatnych, w których odpowiadałem za architekturę, rozwój frontendu oraz integracje backendowe:",
+      "description": "Zestawienie projektów komercyjnych dla liderów rynku oraz autorskich rozwiązań fullstackowych:",
       "categories": {
         "all": "Wszystkie",
         "commercial": "Komercyjne",
@@ -79,7 +83,7 @@
         "description": "Specjalistyczny portal branżowy dla grupy HTI, wspierający procesy logistyczne i sprzedażowe. Realizowałem zadania fullstackowe, budując elastyczne interfejsy w Vue 3 i Vite, które znacząco poprawiły doświadczenie użytkownika końcowego."
       },
       "cards": {
-        "description": "Autorski, wielozadaniowy panel zarządzania z zaawansowanym systemem autoryzacji i uprawnień. Byłem odpowiedzialny za projekt od fazy koncepcyjnej i konsultacji z klientem, aż po pełne wdrożenie produkcyjne gotowego produktu."
+        "description": "Autorski, wielozadaniowy panel zarządzania kartami do gier z zaawansowanym systemem autoryzacji i uprawnień. Byłem odpowiedzialny za projekt od fazy koncepcyjnej i konsultacji z klientem, aż po pełne wdrożenie produkcyjne gotowego produktu."
       },
       "iot": {
         "description": "Zaawansowany pulpit nawigacyjny (Dashboard) do monitorowania i wizualizacji danych z urządzeń IoT w czasie rzeczywistym. Samodzielnie dostarczyłem rozwiązanie od A do Z, dbając o bezpieczeństwo danych, stabilność sesji i intuicyjną prezentację wykresów."
@@ -106,27 +110,28 @@
     "project": {
       "seeDetails": "Szczegóły",
       "live": "Zobacz live",
-      "slowLoad": "Załadowanie strony może potrwać kilka sekund, ponieważ jest ona hostowana darmowym planie Vercel."
+      "private": "Prywatne",
+      "slowLoad": "Strona jest hostowana na darmowej instancji, jej pierwsze załadowanie może potrwać kilka sekund."
     },
     "contact": {
-      "title": "Skontaktuj się",
-      "titleFeatured": "ze mną",
-      "description": "Masz pytania, sugestie, propozycje, czy chcesz współpracować? Skontaktuj się ze mną!",
+      "title": "Napisz",
+      "titleFeatured": "do mnie",
+      "description": "Masz pomysł na aplikację, potrzebujesz wsparcia deweloperskiego lub chcesz nawiązać współpracę? Napisz do mnie!",
       "labels": {
         "name": "Imię",
         "email": "Email",
         "message": "Wiadomość"
       },
       "placeholders": {
-        "message": "W czym mogę Ci pomóc?"
+        "message": "Opisz krótko swój projekt lub pytanie..."
       },
       "submit": "Wyślij wiadomość",
-      "sending": "Wysyłanie wiadomości...",
-      "success": "Wiadomość została wysłana",
+      "sending": "Wysyłanie...",
+      "success": "Wiadomość została wysłana pomyślnie!",
       "errors": {
         "emailRequired": "Adres email jest wymagany",
-        "emailInvalid": "Podany adres email jest nieprawidłowy",
-        "messageTooShort": "Wiadomość jest za krotka"
+        "emailInvalid": "Podaj poprawny adres email",
+        "messageTooShort": "Wiadomość musi mieć minimum 10 znaków"
       }
     }
   }

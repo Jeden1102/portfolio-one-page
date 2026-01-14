@@ -1,7 +1,14 @@
 <template>
   <Card bg="lines" @click="$emit('open')" class="group cursor-pointer">
     <div class="relative aspect-video rounded-lg overflow-hidden mb-4 border border-white/10">
-      <img :src="image" :alt="title" class="w-full h-full object-cover" />
+      <img
+        :src="image"
+        :alt="title"
+        class="size-full object-cover"
+        width="430"
+        height="230"
+        loading="lazy"
+      />
       <div
         class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4"
       >
@@ -34,8 +41,8 @@
 <script setup lang="ts">
 import Card from '@/components/molecules/Card.vue'
 import ProjectLinks from '@/components/molecules/ProjectLinks.vue'
-import type { Project } from '@/types'
 import BaseButton from '@/components/atoms/BaseButton.vue'
+import type { Project } from '@/types'
 
 defineProps<Project>()
 

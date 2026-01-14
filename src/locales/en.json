@@ -1,18 +1,22 @@
 {
+  "meta": {
+    "title": "Dominik Raducki - Frontend Developer",
+    "description": "Developer with 3.5 years of experience specializing in Vue, Nuxt, and Drupal. Explore my commercial projects and skill set."
+  },
   "aside": {
-    "specialization": "Specializing in <b>Vue, Nuxt and Drupal</b> technologies",
+    "specialization": "Specialist in <b>Vue, Nuxt, and Drupal</b> technologies",
     "downloadCv": "Download CV",
     "contact": {
       "phone": "Phone",
       "email": "Email",
-      "birthday": "Birthday",
-      "birthdayValue": "January 28",
+      "birthday": "Date of birth",
+      "birthdayValue": "January 28, 2002",
       "location": "Location",
-      "locationValue": "Poland, Warsaw"
+      "locationValue": "Warsaw / Remote"
     }
   },
   "nav": {
-    "start": "home",
+    "start": "start",
     "about": "about",
     "skills": "skills",
     "projects": "projects",
@@ -22,27 +26,112 @@
     "about": {
       "title": "Frontend",
       "titleFeatured": "Developer",
-      "description": "Dynamic frontend developer focused on building scalable and user-friendly web applications...",
+      "description": "Hi! I'm a developer with over 3.5 years of experience in building scalable web applications. While my core expertise lies within the Vue and Nuxt (3/4) ecosystem, I bridge the gap between modern frontend and solid backend foundations (PHP, Node.js) and CMS systems (Headless Drupal). From advanced IoT dashboards and insurance systems to AI-powered tools – I focus on delivering solutions that are performant, fully typed, and UX-optimized.",
       "stats": {
-        "experience": "Years of commercial experience",
-        "projects": "Projects participated in"
+        "experience": "Years of experience",
+        "projects": "Projects completed"
       }
     },
     "skills": {
-      "title": "Things I'm",
-      "titleFeatured": "Great at",
-      "description": "My experience focuses on creating complete web solutions.",
+      "title": "My",
+      "titleFeatured": "skills",
+      "description": "My experience covers building advanced interfaces, API integrations, and Enterprise-class systems. Here are the technologies I excel in:",
       "categories": {
         "all": "All",
         "frontend": "Frontend",
-        "backend": "Backend",
-        "other": "Other"
+        "backend": "Backend / CMS",
+        "other": "Tools"
       },
       "items": {
-        "html": "Building semantic and responsive websites...",
-        "vue": "Creating advanced SPA applications...",
-        "ts": "Writing safe code with strong typing...",
-        "node": "Designing scalable APIs and microservices..."
+        "vue": "Vue 3 (Composition API) / Vue 2 (Options API) – building reusable architectures and advanced composables.",
+        "nuxt": "Nuxt 3/4 – hybrid rendering (SSR/SSG), Core Web Vitals optimization, and ecosystem modules.",
+        "typescript": "TypeScript – creating fully typed, secure code for complex frontend projects.",
+        "html": "Semantic HTML5 & A11y – focusing on accessibility and document structure for SEO purposes.",
+        "css": "Modern CSS – advanced Responsive Design using Grid, Flexbox, and SCSS preprocessor.",
+        "tailwind": "Tailwind CSS – designing consistent visual systems based on Utility-First CSS.",
+        "gsap": "GSAP – creating smooth web animations and interactive interface elements.",
+        "php": "PHP – supporting backend architecture, building API endpoints, and server-side logic.",
+        "drupal": "Drupal – integrating Enterprise CMS with modern frontend and building custom modules.",
+        "api": "API & AI – REST/GraphQL integrations and implementing generative AI solutions (OpenAI).",
+        "other_ui": "UI Frameworks – proficiency in shadcn-vue, Nuxt UI, PrimeVue, and Vuetify.",
+        "git": "Git – version control and collaboration in GitHub, GitLab, and Bitbucket environments.",
+        "jira": "Agile & CI/CD – working in Scrum, managing Jenkins pipelines, and technical documentation.",
+        "prisma": "Prisma ORM – database modeling and data layer management in Node.js projects.",
+        "vite": "Vite – build process optimization (bundling) and development environment configuration.",
+        "docker": "Docker – application containerization and working within unified deployment environments."
+      }
+    },
+    "projects": {
+      "title": "Selected",
+      "titleFeatured": "projects",
+      "description": "A showcase of commercial projects for market leaders and custom fullstack solutions:",
+      "categories": {
+        "all": "All",
+        "commercial": "Commercial",
+        "private": "Private"
+      },
+      "link4": {
+        "description": "A comprehensive insurance portal for one of Poland's industry leaders. As a fullstack developer (frontend-focused), I was responsible for implementing custom Vue 3 modules and integrating the presentation layer with the Drupal engine in a Docker environment."
+      },
+      "enea": {
+        "description": "Official information and service portal for Enea Operator. I developed the platform in a fullstack model, creating efficient Vue 3 and Tailwind components while ensuring full responsiveness and corporate standards compliance."
+      },
+      "mooveno": {
+        "description": "A modern mobility platform offering car-sharing and fleet management services. I was responsible for the frontend layer, including GSAP animations and custom interactive solutions integrated with a backend CMS."
+      },
+      "hti": {
+        "description": "A specialized industry portal for the HTI Group, supporting logistics and sales processes. I performed fullstack tasks, building flexible Vue 3 and Vite interfaces that significantly improved the end-user experience."
+      },
+      "cards": {
+        "description": "A custom, multi-purpose game card management panel with an advanced authorization and permissions system. I handled the project from the conceptual phase and client consultations to the full production deployment."
+      },
+      "iot": {
+        "description": "An advanced dashboard for real-time monitoring and visualization of IoT device data. I independently delivered the solution from A to Z, focusing on data security, session stability, and intuitive chart presentation."
+      },
+      "homestay": {
+        "description": "A commercial booking platform for luxury apartments. I designed and implemented a complete system including an interactive availability calendar, booking module, and integrated contact forms."
+      },
+      "rooms": {
+        "description": "A complex real estate marketplace platform, my most extensive private project. The system handles the full listing lifecycle: from advanced user panels and authentication to automated email notifications and Prisma database integration."
+      },
+      "aipplied": {
+        "description": "An innovative tool supporting HR processes through Artificial Intelligence. I implemented the full application architecture along with OpenAI API integration to automatically generate personalized recruitment questions based on submitted data."
+      },
+      "seats": {
+        "description": "An intelligent PKP Intercity ticket search engine, solving the problem of seat unavailability on long routes. The app uses a clever route-splitting algorithm and integrates with external data to find available seat combinations."
+      },
+      "drinks": {
+        "description": "A dynamic landing page for a beverage brand, designed with a focus on modern aesthetics and conversion. The project features high performance, polished typography, and smooth section transitions."
+      },
+      "candles": {
+        "description": "A stylish product page for a candle manufacturer, blending artisanal aesthetics with modern Web Performance standards. I focused on visual layer optimization (SCSS) and fast load times."
+      }
+    },
+    "project": {
+      "seeDetails": "Details",
+      "live": "View Live",
+      "private": "Private",
+      "slowLoad": "The site is hosted on a free instance; the initial load may take a few seconds."
+    },
+    "contact": {
+      "title": "Contact",
+      "titleFeatured": "me",
+      "description": "Have a project idea, need development support, or want to collaborate? Get in touch!",
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message"
+      },
+      "placeholders": {
+        "message": "Briefly describe your project or question..."
+      },
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "errors": {
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "messageTooShort": "Message must be at least 10 characters"
       }
     }
   }
