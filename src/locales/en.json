@@ -43,10 +43,10 @@
         "other": "Tools"
       },
       "items": {
-        "vue": "Vue 3 (Composition API) / Vue 2 (Options API) – building reusable architectures and advanced composables.",
+        "vue": "Vue 3 (Composition API) / Vue 2 (Options API), Vue Router – building reusable architectures and advanced composables.",
         "nuxt": "Nuxt 3/4 – hybrid rendering (SSR/SSG), Core Web Vitals optimization, and ecosystem modules.",
         "typescript": "TypeScript – creating fully typed, secure code for complex frontend projects.",
-        "html": "Semantic HTML5 & A11y – focusing on accessibility and document structure for SEO purposes.",
+        "html": "Semantic HTML5 (+ Twig, Blade) & A11y – focusing on accessibility and document structure for SEO purposes.",
         "css": "Modern CSS – advanced Responsive Design using Grid, Flexbox, and SCSS preprocessor.",
         "tailwind": "Tailwind CSS – designing consistent visual systems based on Utility-First CSS.",
         "gsap": "GSAP – creating smooth web animations and interactive interface elements.",
