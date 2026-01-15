@@ -1,6 +1,6 @@
 <template>
   <aside>
-    <AppCard class="flex flex-col gap-4 lg:w-90 lg:min-w-90 lg:sticky top-8" isAnimated>
+    <AppCard class="flex flex-col gap-4 lg:w-90 lg:min-w-90 lg:sticky top-8">
       <div class="flex gap-6 w-fit items-center">
         <div class="bg-primary-500/60 rounded-lg p-2">
           <Vue3Lottie :animationData="Developer" :height="64" :width="64" :speed="0.5" />
@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Vue3Lottie } from 'vue3-lottie'
 
@@ -63,35 +63,35 @@ const contactForms = computed(() => [
   {
     title: t('aside.contact.phone'),
     value: '+49 516 525 133',
-    icon: 'pi pi-phone',
+    icon: 'mdi:phone',
     uri: 'tel:+49516525133',
   },
   {
     title: t('aside.contact.email'),
     value: 'dom.rad14@gmail.com',
-    icon: 'pi pi-envelope',
+    icon: 'mdi:email',
     uri: 'mailto:dom.rad14@gmail.com',
   },
   {
     title: t('aside.contact.birthday'),
     value: t('aside.contact.birthdayValue'),
-    icon: 'pi pi-calendar',
+    icon: 'mdi:calendar',
   },
   {
     title: t('aside.contact.location'),
     value: t('aside.contact.locationValue'),
-    icon: 'pi pi-map-marker',
+    icon: 'mdi:map-marker',
   },
 ])
 
 const socials = [
   {
-    icon: 'pi pi-github',
+    icon: 'mdi:github',
     title: 'GitHub',
     uri: 'https://github.com/Jeden1102',
   },
   {
-    icon: 'pi pi-linkedin',
+    icon: 'mdi:linkedin',
     title: 'LinkedIn',
     uri: 'https://linkedin.com/in/dominik-raducki',
   },

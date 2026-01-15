@@ -7,7 +7,7 @@
       </header>
 
       <main>
-        <AppCard isAnimated class="flex flex-col gap-10 lg:p-6 lg:gap-12">
+        <AppCard class="flex flex-col gap-10 lg:p-6 lg:gap-12">
           <About />
           <Skills />
           <Projects />

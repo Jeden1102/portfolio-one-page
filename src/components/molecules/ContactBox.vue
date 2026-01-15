@@ -1,7 +1,7 @@
 <template>
   <div class="flex gap-4 items-center">
     <span class="text-xl bg-primary-500 text-white rounded-full size-10 grid place-content-center">
-      <i :class="icon"></i>
+      <Icon :icon />
     </span>
     <div>
       <p class="font-semibold uppercase">{{ title }}</p>
@@ -14,6 +14,8 @@
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
+
 defineProps<{
   title: string
   value: string
