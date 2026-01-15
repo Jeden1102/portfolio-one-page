@@ -13,7 +13,7 @@
             @click="$emit('close')"
             class="absolute top-4 right-4 text-gray-400 hover:text-gray-100 cursor-pointer z-20 bg-black/20 p-2 rounded-full backdrop-blur-md"
           >
-            <i class="pi pi-times"></i>
+            <Icon icon="material-symbols:close-rounded" class="text-2xl" />
           </button>
 
           <img :src="project.image" :alt="project.title" class="w-full aspect-video object-cover" />
@@ -44,6 +44,7 @@ import { onMounted, onUnmounted } from 'vue'
 import BaseBadge from '@/components/atoms/BaseBadge.vue'
 import ProjectLinks from '@/components/molecules/ProjectLinks.vue'
 import type { Project } from '@/types'
+import { Icon } from '@iconify/vue'
 
 defineProps<{
   isOpen: boolean

@@ -24,7 +24,7 @@
           :disabled="isSubmitting"
         >
           <template v-if="isSubmitting">
-            <i class="pi pi-spin pi-spinner mr-2"></i>
+            <Icon icon="eos-icons:loading" class="animate-spin" />
             {{ $t('home.contact.sending') }}
           </template>
           <template v-else>
@@ -45,6 +45,7 @@ import { useContactForm } from '@/composables/useContactForm'
 import BaseInput from '@/components/atoms/BaseInput.vue'
 import BaseTextarea from '@/components/atoms/BaseTextarea.vue'
 import BaseButton from '@/components/atoms/BaseButton.vue'
+import { Icon } from '@iconify/vue'
 
 const { form, errors, isSubmitting, showSuccess, sendEmail } = useContactForm()
 </script>
