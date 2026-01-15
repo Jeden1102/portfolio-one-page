@@ -29,8 +29,13 @@
 </template>
 
 <script setup lang="ts">
-import DotGrid from '@/components/bits/DotGrid/DotGrid.vue'
-import FloatingLines from '@/components/bits/FloatingLines/FloatingLines.vue'
+import { defineAsyncComponent } from 'vue'
+
+const DotGrid = defineAsyncComponent(() => import('@/components/bits/DotGrid/DotGrid.vue'))
+
+const FloatingLines = defineAsyncComponent(
+  () => import('@/components/bits/FloatingLines/FloatingLines.vue'),
+)
 
 defineProps<{
   bg: 'lines' | 'grid'
